@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finance Reports</title>
+    <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropzone.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+</head>
+<body>
+
+<!--START HEADER-->
+<header>
+   <div class="header-block-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-5 xs-hide">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="search">
+                        <input type="search" placeholder="Поиск мастера">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                  	<div class="logo logo-mobile">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                   <div class="right-block">
+                   
+                        <span class="language"> 
+                           Рус
+                           <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <ul class="languages">
+                            <li><a href="#">Рус</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul>
+                        <ul class="balance">
+                            <li>
+                                <a href="#">Баланс <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="sub-menu">
+                                    <li>
+										<p class="header-sub-menu">Балансы <span>10 000 грн.</span><i class="fa fa-times" aria-hidden="true"></i></p>
+										<ul>
+											<li class="active"><a href="#">Финансы</a></li>
+											<li><a href="#">История транзакций</a></li>
+											<li><a href="#">Вывод средств</a></li>
+											<li><a href="#">Пополнить счёт</a></li>
+										</ul>
+									</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="messages">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>
+                                    <span>2</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+										<p class="header-sub-menu">Сообщения<i class="fa fa-times" aria-hidden="true"></i></p>
+										<ul>
+											<li>
+												<a href="#">
+													<img src="images/photo-2.png" alt="">
+												</a>
+												<a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+											</li>
+											
+											<li>
+												<a href="#">
+													<img src="images/photo-2.png" alt="">
+												</a>
+												<a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф заинтересовался вашим проф</p>
+												</a>
+											</li>
+											
+											<li>
+												<a href="#">
+													<img src="images/photo-2.png" alt="">
+												</a>
+												<a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+											</li>
+											
+											<li>
+												<a href="#">
+													<img src="images/photo-2.png" alt="">
+												</a>
+												<a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+											</li>
+										</ul>
+                                   		<a href="#" class="all-messages">Смотреть все сообщения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>    
+                                <a href="#">
+                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="user">
+                            <li>
+                                <a href="#">
+                                    <img src="images/photo-2.png" alt="">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-block-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                   <div class="search search-mobile">
+                        <input type="search" placeholder="Поиск мастера">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <i class="fa fa-bars mobile-menu" aria-hidden="true"></i>
+                    <ul class="menu">
+                        <li><a href="#">Мои проекты</a></li>
+                        <li><a href="#">Искать работу</a></li>
+                        <li><a href="#">Найти мастера</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Тарифные планы</a></li>
+                    </ul>
+                    <a href="#" class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Моё местоположение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--END HEADER-->
+
+<!--START CONTENT-->
+
+<section ng-app="app" ng-controller="RatingController as rating" class="container-star">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="my-profil">
+					<h2 class="title">Мои проекты</h2>
+					<div class="search">
+					    <input type="search">
+					    <input type="submit">
+					</div>
+					<div class="financial-report">
+					<div class="financial-report-header">
+					<div class="checkbox-menu">
+						<div class="checkbox">
+							<p>
+								<input id="test1" type="checkbox">
+								<label for="test1"></label>
+							</p>
+						</div>
+						<ul class="checkbox-subMenu">
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">lorem</a></li>
+							<li><a href="#">lorem</a></li>
+						</ul>
+					</div>
+					<ul class="act">
+						<li>
+							<a href="#" class="button">Действие	</a>
+							<ul class="subMenu">
+								<li><a href="#">Действие</a></li>
+								<li><a href="#">Действие</a></li>
+								<li><a href="#">Действие</a></li>
+								<li><a href="#">Действие</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="input-group date">
+						<input type="text" class="form-control">
+						<span class="input-group-addon">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<a href="#" class="button clear">Очистить отчётность</a>	
+					</div>
+					
+					
+					
+					<div class="tables">
+						<div class="tr">
+							<div class="th">
+								
+							</div>
+							<div class="th">
+								<h5>Дата</h5>
+							</div>
+							<div class="th">
+								<h5>Операция</h5>
+							</div>
+							<div class="th">
+								<h5>Сумма</h5>
+							</div>
+							<div class="th">
+								<h5>Остаток</h5>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test2" type="checkbox">
+										<label for="test2"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test3" type="checkbox">
+										<label for="test3"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test4" type="checkbox">
+										<label for="test4"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test5" type="checkbox">
+										<label for="test5"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test6" type="checkbox">
+										<label for="test6"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test7" type="checkbox">
+										<label for="test7"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test8" type="checkbox">
+										<label for="test8"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test9" type="checkbox">
+										<label for="test9"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+						
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test10" type="checkbox">
+										<label for="test10"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test11" type="checkbox">
+										<label for="test11"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+						<div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test12" type="checkbox">
+										<label for="test12"></label>
+									</p>
+								</div>
+							</div>
+							<div class="td">
+								<p>20.08.16</p>
+							</div>
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+					</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="sline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+				<div class="have-questions">
+					<h2 class="title center">Есть вопросы?</h2>
+					<a href="#" class="button" data-toggle="modal" data-target=".contact-admin">Связаться с администратором</a>
+					<i class="icon-question"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--END CONTENT-->
+
+<!--START FOOTER-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo"><img src="images/logo-footer.png" alt=""></div>
+                <ul class="soc">
+                	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                	<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+                <ul class="menu">
+                	<li><a href="#">Мои проекты</a></li>
+                	<li><a href="#">Искать работу</a></li>
+                	<li><a href="#">Найти мастера</a></li>
+                	<li><a href="#">Помощь</a></li>
+                	<li><a href="#">Тарифные планы</a></li>
+                </ul>
+                <div class="payment">
+                	<h5>Доступные способы оплаты</h5>
+                	<ul>
+                		<li><i class="icon-privat"></i>Приват 24</li>
+                		<li><i class="icon-yandex-monery"></i>ЯндексДеньги</li>
+                		<li><i class="fa fa-usd" aria-hidden="true"></i>LiqPay</li>
+                		<li><i class="fa fa-cc-visa" aria-hidden="true"></i>Visa</li>
+                		<li><i class="fa fa-cc-mastercard" aria-hidden="true"></i>Master card</li>
+                	</ul>
+                </div>
+                <div class="subscription">
+                	<h5>Подпишитесь на рассылку</h5>
+                	<input type="email" placeholder="Введите e-mail">
+                	<input type="submit" value="ОТПРАВИТЬ">
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--END FOOTER-->
+<!--START MODAL-->
+<div class="modal fade contact-admin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title">Связаться с администратором</h4>
+			<i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
+		</div>
+		<form action="#">
+			<input type="text" placeholder="Ваше имя">
+			<input type="email" placeholder="Электронная почта">
+			<textarea name="#" id="#" placeholder="Опишите ваш вопрос"></textarea>
+			<input type="submit" value="Связаться">
+		</form>
+	</div>
+</div>
+</div>
+
+<!--END MODAL-->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/dropzone.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/bootstrap-datepicker.ru.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script  src="js/common.js"></script>
+<script type="text/javascript">
+	$('.input-group-addon').datepicker({
+    keyboardNavigation: false,
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true,
+	language: "ru"
+});
+</script>
+
+</body>
+</html>
