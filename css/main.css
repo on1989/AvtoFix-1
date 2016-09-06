@@ -4146,11 +4146,30 @@ b {
     padding-right: 0;
   }
   section
+  .messages {
+    position: relative;
+  }
+  section
+.messages
+  ul {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+  }
+  section
 .messages
 ul
 li
 i::before {
     margin-left: 5px;
+  }
+  section .messages
+  p.text {
+    padding-top: 30px;
+  }
+  section .messages
+  .user {
+    width: 50%;
   }
   section
 .messages
@@ -4239,28 +4258,6 @@ i:before {
 li {
     width: calc(100% /3.05) !important;
     padding-right: 20px;
-  }
-  section
-.messages
-.user {
-    min-width: 90px;
-    width: 90px;
-    max-width: 120px;
-    text-align: center;
-    vertical-align: middle;
-  }
-  section
-.messages
-.user
-p.name {
-    margin-left: 0;
-    margin-top: 5px;
-  }
-  section
-.messages
-p.status {
-    font-size: 14px;
-    margin-top: 29px;
   }
   section
 .messages
@@ -4468,6 +4465,12 @@ a {
     right: 70px;
     top: 13px;
   }
+  
+  
+  
+  
+  
+  
   footer
 .logo {
     display: table;
@@ -4480,6 +4483,7 @@ a {
   footer
 .payment {
     width: 100%;
+    text-align: center;
   }
   footer
 .payment
@@ -4509,6 +4513,13 @@ i:before {
     font-size: 17px;
   }
   footer
+  .subscription {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: block;
+  }
+  footer
 .soc {
     display: table;
     margin: 30px auto;
@@ -4522,6 +4533,15 @@ i:before {
     height: 37px;
     line-height: 37px;
     font-size: 20px;
+  }
+  
+/*  Alina*/
+  section .messages
+  p.text {
+    width: 100%;
+  }
+  section .messages:last-child {
+    margin-bottom: 20px;
   }
 }
 
@@ -4658,12 +4678,21 @@ form
 }
 
 /*     Alina    */
-.container-search-masters .search-orders input{
-  
-}
+
 .container-search-masters .input button {
-  line-height: 43px;
-  right: 0;
+  line-height: 50px;
+  right: 20px;
+}
+.freelancer-search .search-orders {
+  line-height: 50px;
+  margin-top: 20px;
+}
+#search-orders {
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+.freelancer-search .search-orders .title {
+  margin: 0;
 }
 .range {
   overflow: hidden;
@@ -4672,13 +4701,13 @@ form
 .range label, #minCost, #maxCost {
   float: left;
 }
-.range label[for="minCost"] {
-  margin-right: 50px;
+.range label.col-sm-3.control-label {
+  padding-left: 0;
 }
 #minCost, #maxCost {
   width: 67px;
   text-align: center;
-  margin: auto 10px
+  margin: auto 10px;
 }
 
 /* Ширина слайдера */
@@ -4718,11 +4747,16 @@ form
     top: -7px;
     margin-left: -6px;
 }
-.ui-slider-horizontal .ui-slider-handle:before { 
-    content: "fff";
-    color: #000;
+
+.ui-slider-horizontal .after { 
     position: absolute;
-    top: 30px;
+    top: 35px;
+    left: -5px;
+    color: #000;
+    width: 100px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 12px;
 }
 .ui-slider-horizontal .ui-slider-range {
     top: 0;
@@ -4751,6 +4785,7 @@ form
     border-radius: 4px;
 }
 .priority-selection {
+  padding: 25px 5px 10px;
   color: #f39c12;
   overflow: hidden;
 }
@@ -4758,7 +4793,10 @@ form
   float: left;
 }
 .priority-selection label{
-  margin: 0 10px;
+  margin-right: 20px;
+}
+.priority-selection label input{
+  margin-right: 15px;
 }
 /*  end Alina  */
 

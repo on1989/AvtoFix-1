@@ -218,32 +218,40 @@ $(document).mouseup(function (e)  {
 });
 // ПОЛЗУНОК
   $("#slider").slider({
+    step: 100,
+    range: true,
     min: 100,
     max: 30000,
     values: [100,5000],
-    range: true,
-    stop: function(event, ui) {
-        $("input#minCost").val($("#slider").slider("values",0));
-        $("input#maxCost").val($("#slider").slider("values",1));
-    },
     slide: function(event, ui){
         $("input#minCost").val($("#slider").slider("values",0));
         $("input#maxCost").val($("#slider").slider("values",1));
+        
+        $(".first-after").html( $("input#minCost").val() + " грн");
+        $(".last-after").html( $("input#maxCost").val() + " грн");
     }
 
 });
+  // добавление подписи под ползунками
+  $( $('#slider .ui-slider-handle')[0] ).append("<span class='after first-after'>100 грн</span>");
+  $( $('#slider .ui-slider-handle')[1] ).append("<span class='after last-after'>5000 грн</span>");
+  
+  // Изменение местоположения ползунка при вводе данных в первый элемент input
   $("input#minCost").change(function(){
     var value1=$("input#minCost").val();
     var value2=$("input#maxCost").val();
+    var after1=$('#slider .ui-slider-handle')[1];
+    var after2=$('#slider .ui-slider-handle')[2];
  
     if(parseInt(value1) > parseInt(value2)){
         value1 = value2;
         $("input#minCost").val(value1);
     }
     $("#slider").slider("values",0,value1);
+    $(".first-after").html( value1  + " грн");
 });
  
-     
+// Изменение местоположения ползунка при вводе данных в второй элемент input
 $("input#maxCost").change(function(){
     var value1=$("input#minCost").val();
     var value2=$("input#maxCost").val();
@@ -255,7 +263,22 @@ $("input#maxCost").change(function(){
         $("input#maxCost").val(value2);
     }
     $("#slider").slider("values",1,value2);
+    $(".last-after").html(value2 + " грн");
 });
+// фильтрация ввода в поля только цифры
+			$('input#minCost, input#maxCost').keypress(function(event){
+				var key, keyChar;
+				if(!event) var event = window.event;
+				
+				if (event.keyCode) key = event.keyCode;
+				else if(event.which) key = event.which;
+			
+				if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+				keyChar=String.fromCharCode(key);
+				
+				if(!/\d/.test(keyChar))	return false;
+			
+			});
 
 
 });
