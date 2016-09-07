@@ -43,14 +43,16 @@
             </div>
             <div class="right-block">
 
-              <span class="language"> 
-                           Рус
-                           <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </span>
-              <ul class="languages">
-                <li><a href="#">Рус</a></li>
-                <li><a href="#">En</a></li>
+              <ul class="language"> 
+                <li>
+                  <a href="#">Рус<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Рус</a></li>
+                    <li><a href="#">En</a></li>
+                  </ul>
+                </li>
               </ul>
+              
               <ul class="balance">
                 <li>
                   <a href="#">Баланс <i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -261,7 +263,7 @@
                 <label class="status not-fast" for="not-quick"><input id="not-quick" type="radio" name="quick" checked="">
                 Несрочные</label>
               </div>
-              <input type="reset" value="Очистить фильтры">
+              <input type="reset" value="Очистить фильтры"><input type="submit" value="Поиск" class="button">
             </form>
           </div>
         </div>

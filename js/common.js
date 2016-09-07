@@ -179,7 +179,7 @@ $(document).ready(function () {
   ;
   var menuOpen = 1;
 
-  $(".messages li a, .balance li a, .balance-mobile li a").each(function () {
+  $(".messages li a, .balance li a, .balance-mobile li a, .language li a").each(function () {
     $(this).click(function () {
       if (menuOpen) {
         $(this).siblings(".sub-menu").show();

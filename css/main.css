@@ -283,7 +283,7 @@ header .right-block ul li a {
   position: relative;
 }
 
-header .right-block .language,
+header .right-block .language a,
 header .right-block .balance a {
   cursor: pointer;
   color: #000;
@@ -299,10 +299,6 @@ header .right-block .balance a i:before {
   color: #3a7bd5;
   vertical-align: middle;
   margin-left: 5px;
-}
-
-header .right-block .languages {
-  display: none;
 }
 
 header .right-block .balance {
@@ -345,7 +341,7 @@ header .right-block .balance-mobile .sub-menu li a {
 }
 
 header .right-block .balance .sub-menu li a:hover,
-header .right-block .balance-mobile .sub-menu li a:hover {
+header .right-block .balance-mobile .sub-menu li a:hover, header .right-block .language .sub-menu li a:hover {
   color: #3498db;
   font-weight: 600;
 }
@@ -371,6 +367,19 @@ header .right-block .balance-mobile .sub-menu .header-sub-menu i {
   top: 8px;
   right: -8px;
   line-height: 1;
+}
+
+header .right-block .language .sub-menu {
+  width: 80px;
+  left: 10px;
+  line-height: initial;
+  padding: 10px 0;
+}
+header .right-block .language .sub-menu:before {
+  right: 25px;
+}
+header .right-block .language .sub-menu li {
+  line-height: 30px;
 }
 
 header .right-block .sub-menu {
@@ -452,6 +461,7 @@ header .right-block .sub-menu:before {
   right: 120px;
   z-index: 1;
 }
+
 
 header .user img {
   width: 40px;
@@ -1688,10 +1698,6 @@ section .my-profil .tr {
   border-bottom: 1px solid #d9d9d9;
 }
 
-section .my-profil .tr:last-child {
-  border-bottom: none;
-}
-
 section .my-profil .tr .th,
 section .my-profil .tr .td {
   display: inline-block;
@@ -1922,6 +1928,9 @@ section .comments .comment-text {
 
 .my-profil .order-tracker .comment {
   overflow: hidden;
+}
+.my-profil .order-tracker .comment:last-child {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .my-profil .order-tracker .comment-text {
@@ -2334,7 +2343,7 @@ section .refill h5.title {
   margin-bottom: 37px;
 }
 
-section .refill .button {
+section .refill .button, .freelancer-search .button {
   background: -webkit-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
   background: -moz-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
   background: -o-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);

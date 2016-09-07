@@ -208,7 +208,7 @@
             		<div class="input">
             			<input type="text" placeholder="Начните вводить местоположение для фильтрации мастеров по нему">
             		</div>
-            		<input type="reset" value="Очистить фильтры">
+            		<input type="reset" value="Очистить фильтры"><input type="submit" value="Поиск" class="button">
             	</form>
             </div>
        </div>
@@ -238,166 +238,167 @@
 			</ul>
    			<div class="clearfix"></div>
     		<div class="search-user">
-    			<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
 						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-1.png" alt="">
-					<h3 class="name">Антон Кузьмин</h3>
-						<div star-rating ng-model="rating.rating1" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Анатолий Складской</h3>
-						<div star-rating ng-model="rating.rating2" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-1.png" alt="">
-					<h3 class="name">Сергей Степанов</h3>
-					<div star-rating ng-model="rating.rating3" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-						<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Борис Новгородский</h3>
-					<div star-rating ng-model="rating.rating4" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating5" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating6" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating7" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
 						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-1.png" alt="">
-					<h3 class="name">Антон Кузьмин</h3>
-						<div star-rating ng-model="rating.rating1" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
-						<div star-rating ng-model="rating.rating2" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-1.png" alt="">
-					<h3 class="name">Сергей Степанов</h3>
-					<div star-rating ng-model="rating.rating3" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-						<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
-					<img class="photo" src="images/photo-2.png" alt="">
-					<h3 class="name">Борис Новгородский</h3>
-					<div star-rating ng-model="rating.rating4" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
-					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
-					<a href="" class="button">Нанять</a>
-				</div>
-				<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating5" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
-				<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating6" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
-				<div class="item">
+                <div class="item">
 					<img class="photo" src="images/photo-2.png" alt="">
 					<h3 class="name">Анатолий Складской</h3>
-					<div star-rating ng-model="rating.rating7" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
 					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
 					<hr class="sline">
-					<a href="#" class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</a>
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
 					<a href="" class="button">Нанять</a>
 				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+                <div class="item">
+					<img class="photo" src="images/photo-2.png" alt="">
+					<h3 class="name">Анатолий Складской</h3>
+						<div star-rating ng-model="rating.rating8" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+					<div class="by-rating">(по оценкам <span>150</span> пользователей)</div>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<hr class="sline">
+					<div class="city"><i class="fa fa-map-marker" aria-hidden="true"></i> Харьков</div>
+					<a href="" class="button">Нанять</a>
+				</div>
+               
     			</div>
     			<a href="#" class="show-more search"><i class="fa fa-refresh" aria-hidden="true"></i>Показать больше</a>
 				<div class="select-search">
