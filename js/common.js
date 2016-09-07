@@ -179,7 +179,7 @@ $(document).ready(function () {
   ;
   var menuOpen = 1;
 
-  $(".messages li a, .balance li a").each(function () {
+  $(".messages li a, .balance li a, .balance-mobile li a").each(function () {
     $(this).click(function () {
       if (menuOpen) {
         $(this).siblings(".sub-menu").show();
@@ -199,12 +199,12 @@ $(document).ready(function () {
   $(".mobile-menu").each(function () {
     $(this).click(function () {
       if (mobileMenuOpen) {
-        $(".menu").slideDown();
+        $(".header-block-2").css("display", "block");
         $('.mobile-menu').removeClass('fa-bars');
         $('.mobile-menu').addClass('fa-times');
         mobileMenuOpen = 0;
       } else {
-        $(".menu").slideUp();
+        $(".header-block-2").css("display", "none");
         $('.mobile-menu').addClass('fa-bars');
         $('.mobile-menu').removeClass('fa-times');
         mobileMenuOpen = 1;
@@ -245,18 +245,31 @@ $(".cat input").each(function () {
 //END INPUT CATEGORIES
 
 //START CHECKBOX MENU
-var checkBoxMenu = 1;
-  $(".checkbox-menu input").click(function () {
-    
-    if (checkBoxMenu) {
-      $(".checkbox input").addClass('checked');
-      checkBoxMenu = 0;
-    } else {
-      $(".checkbox input").removeClass('checked');
-      checkBoxMenu = 1;
-    }
-    
-  });
+//var checkBoxMenu = 1;
+//  $(".checkbox-menu input").click(function () {
+//    
+//    if (checkBoxMenu) {
+//      $(".checkbox input").addClass('checked');
+//      checkBoxMenu = 0;
+//    } else {
+//      $(".checkbox input").removeClass('checked');
+//      checkBoxMenu = 1;
+//    }
+//    
+//  });
+
+$("#test1").click(function () {
+    $(this).toggleClass('checked');
+  if($(this).hasClass('checked')){
+    $('.td .checkbox input').removeClass('checked');
+  }else
+    $('.td .checkbox input').addClass('checked');
+});
+
+$(".checkbox input").click(function () {
+  $(this).toggleClass('checked');
+});
+
 //END CHECKBOX MENU
 
 //START ATR MENU
@@ -411,7 +424,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  
+
   // ПОЛЗУНОК
   $("#slider").slider({
     step: 100,
@@ -464,7 +477,7 @@ $(document).ready(function () {
     $("#slider").slider("values", 1, value2);
     $(".last-after").html(value2 + " грн");
   });
-  
+
   // фильтрация ввода в поля только цифры
   $('input#minCost, input#maxCost').keypress(function (event) {
     var key, keyChar;
@@ -479,6 +492,6 @@ $(document).ready(function () {
     if (!/\d/.test(keyChar)) return false;
 
   });
-  
-  
+
+
 });
