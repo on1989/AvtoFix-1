@@ -3285,6 +3285,9 @@ section
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+#datetimepicker input {
+  padding: 0 35px 0 10px;
+}
 
 .radio-button {
   position: relative;

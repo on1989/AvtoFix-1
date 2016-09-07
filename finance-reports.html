@@ -190,7 +190,7 @@
 							</ul>
 						</li>
 					</ul>
-					<div class="input-group date">
+					<div class="input-group date" id="datetimepicker">
 						<input type="text" class="form-control">
 						<span class="input-group-addon">
 							<i class="fa fa-calendar" aria-hidden="true"></i>
@@ -558,6 +558,7 @@
 </div>
 
 <!--END MODAL-->
+
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
@@ -568,7 +569,7 @@
 <script src="js/slick.min.js"></script>
 <script  src="js/common.js"></script>
 <script type="text/javascript">
-	$('.input-group-addon').datepicker({
+	$('#datetimepicker').datepicker({
     keyboardNavigation: false,
     forceParse: false,
     autoclose: true,
