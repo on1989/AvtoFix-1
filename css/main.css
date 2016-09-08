@@ -179,7 +179,7 @@ header .login li:nth-child(1) a {
   color: #ffffff;
 }
 
-header .login li:nth-child(2) a {
+header .login li a {
   margin-left: 30px;
   color: #000;
   background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
@@ -380,7 +380,15 @@ header .right-block .language .sub-menu:before {
 }
 header .right-block .language .sub-menu li {
   line-height: 30px;
+  width: 80px;
+  text-align: center;
 }
+header .right-block .language .sub-menu li a{
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
 
 header .right-block .sub-menu {
   position: absolute;
