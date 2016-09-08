@@ -244,6 +244,14 @@ $(".cat input").each(function () {
 });
 //END INPUT CATEGORIES
 
+//$('#tokenfield').tokenfield({
+//  autocomplete: {
+//    source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+//    delay: 100
+//  },
+//  showAutocompleteOnFocus: true
+//})
+
 //START CHECKBOX MENU
 //var checkBoxMenu = 1;
 //  $(".checkbox-menu input").click(function () {

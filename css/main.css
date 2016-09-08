@@ -105,7 +105,6 @@ video {
   vertical-align: baseline;
 }
 
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -987,17 +986,19 @@ section .order .order-head ul {
 
 section .order .order-head ul li:last-of-type {
   float: right;
-  width: 260px;
   text-align: center;
-  background: #3497da;
-  margin-right: -1px;
+  margin-right: 20px;
 }
 
-section .order .order-head ul li:last-of-type a {
+section .order .order-head ul .button {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  height: 100%;
+  width: 165px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  text-align: center;
+  border-radius: 5px;
 }
 
 section .order .price {
@@ -3377,7 +3378,20 @@ footer .subscription input[type="email"] {
   section .messages:last-child {
     margin-bottom: 20px;
   }
-}
+  .freelancer-search .search-orders {
+    margin-bottom: 10px;
+  }
+  .freelancer-search .search-orders h2.title {
+    text-align: center;
+  }
+  .freelancer-search .select, .freelancer-search .select > select, .freelancer-search .input, .freelancer-search .input > input {
+    width: 100% !important;
+  }
+  .freelancer-search .location-input {
+    margin-left: 0 !important;
+    margin-top: 25px;
+  }
+  
 
 @media only screen and (max-width: 480px) {
   header .header-block-1 {
@@ -3517,7 +3531,6 @@ span.plus {
 .freelancer-search .search-orders .title {
   margin: 0;
 }
-
 .range {
   overflow: hidden;
   margin: 10px 0;
