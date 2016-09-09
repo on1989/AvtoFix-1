@@ -281,10 +281,8 @@ $(".checkbox input").click(function () {
 
 // lightBox
   $(function(){
-    if ($(".photo a").length > 0)
-    $(".photo a").lightBox({
-      container: false
-    });
+    if ($(".fancybox").length > 0)
+    $(".fancybox").fancybox();
   });
 // END lightBox
 
