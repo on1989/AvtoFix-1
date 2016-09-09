@@ -1,112 +1,103 @@
+/* line 3, D:/AvtoFix/css/style.scss */
 .tariff-plan.banner {
   position: relative;
-  margin-bottom: 20px;
-}
-
-.tariff-plan.banner
+  margin-bottom: 20px; }
+  /* line 7, D:/AvtoFix/css/style.scss */
+  .tariff-plan.banner
 img {
-  width: 100%;
-}
-
-.tariff-plan.banner
+    width: 100%; }
+  /* line 11, D:/AvtoFix/css/style.scss */
+  .tariff-plan.banner
 h3.banner-title {
-  font-size: 30px;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  margin-top: -13px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-weight: 700;
-}
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-weight: 700; }
 
+/* line 24, D:/AvtoFix/css/style.scss */
 .tariff-plan
 .account-items {
-  margin-bottom: 35px;
-}
-
-.tariff-plan
+  margin-bottom: 35px; }
+  /* line 28, D:/AvtoFix/css/style.scss */
+  .tariff-plan
 .account-items
 .account-item {
-  width: calc(100% / 4.05 - 18.5px);
-  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.16);
-  background: #fff;
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 25px;
-  padding: 30px 40px;
-  text-align: center;
-  vertical-align: top;
-}
-
-.tariff-plan
+    width: calc(100% / 4.05 - 18.5px);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 25px;
+    padding: 30px 40px;
+    text-align: center;
+    vertical-align: top; }
+    /* line 40, D:/AvtoFix/css/style.scss */
+    .tariff-plan
 .account-items
 .account-item:nth-of-type(4n) {
-  margin-right: 0;
-}
-
-.tariff-plan
+      margin-right: 0; }
+  /* line 46, D:/AvtoFix/css/style.scss */
+  .tariff-plan
 .account-items
 h5.title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
-}
-
-.tariff-plan
+    font-size: 18px;
+    font-weight: 600;
+    color: #000; }
+  /* line 52, D:/AvtoFix/css/style.scss */
+  .tariff-plan
 .account-items
 h4.price {
-  font-size: 30px;
-  color: #f2c510;
-  font-weight: 700;
-  margin: 30px 0;
-}
-
-.tariff-plan
+    font-size: 30px;
+    color: #f2c510;
+    font-weight: 700;
+    margin: 30px 0; }
+    /* line 59, D:/AvtoFix/css/style.scss */
+    .tariff-plan
 .account-items
 h4.price.urgent {
-  color: #e84c3c;
-}
-
-.tariff-plan
+      color: #e84c3c; }
+    /* line 64, D:/AvtoFix/css/style.scss */
+    .tariff-plan
 .account-items
 h4.price
 span {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-}
-
-.tariff-plan
+      display: block;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000; }
+  /* line 72, D:/AvtoFix/css/style.scss */
+  .tariff-plan
 .account-items
 p.text {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 35px;
-}
-
-.tariff-plan
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px; }
+  /* line 78, D:/AvtoFix/css/style.scss */
+  .tariff-plan
 .account-items
 a.button {
-  background: -webkit-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
-  background: -moz-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
-  background: -o-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
-  background: -ms-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
-  background: linear-gradient(0deg, #3a7cd5 0%, #3498db 100%);
-  border-radius: 5px;
-  width: 177px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  display: table;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 400;
-  margin: 0 auto;
-}
+    background: -webkit-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+    background: -moz-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+    background: -o-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+    background: -ms-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+    background: linear-gradient(0deg, #3a7cd5 0%, #3498db 100%);
+    border-radius: 5px;
+    width: 177px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: table;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 auto; }
 
+/* line 101, D:/AvtoFix/css/style.scss */
 .messages-page
 h3.title {
   font-size: 20px;
@@ -114,9 +105,9 @@ h3.title {
   color: #010101;
   display: inline-block;
   vertical-align: middle;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
+/* line 110, D:/AvtoFix/css/style.scss */
 .messages-page
 .button {
   width: 165px;
@@ -136,48 +127,45 @@ h3.title {
   color: #fff;
   margin-left: 40px;
   vertical-align: middle;
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
+/* line 131, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-block {
   background-color: #ffffff;
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.16);
   height: 680px;
   border: 1px solid #d8d8d8;
-  margin: 30px 0 60px;
-}
+  margin: 30px 0 60px; }
 
+/* line 140, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-block-left {
   width: 473px;
   height: 100%;
   display: inline-block;
   border-right: 1px solid #d8d8d8;
-  vertical-align: top;
-}
-
-.messages-page
+  vertical-align: top; }
+  /* line 148, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-block-left
 .messages-content {
-  max-height: 585px;
-  overflow-y: auto;
-}
-
-.messages-page
+    max-height: 585px;
+    overflow-y: auto; }
+  /* line 158, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-block-left
 .messages-content
 li.not-read {
-  background-color: #f6f6f6;
-}
-
-.messages-page
+    background-color: #f6f6f6; }
+  /* line 163, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-block-left
 .messages-content
 li.active {
-  background-color: #3396d8;
-}
+    background-color: #3396d8; }
 
+/* line 170, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-block-right {
   display: inline-block;
@@ -185,230 +173,211 @@ li.active {
   vertical-align: top;
   margin-left: -5px;
   position: relative;
-  height: 100%;
-}
-
-.messages-page
+  height: 100%; }
+  /* line 179, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-block-right
 .messages-content {
-  max-height: 469px;
-  overflow-y: auto;
-}
-
-.messages-page
+    max-height: 469px;
+    overflow-y: auto; }
+    /* line 184, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .messages-content
 li {
-  line-height: 40px;
-}
-
-.messages-page
+      line-height: 40px; }
+    /* line 188, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .messages-content
 img {
-  vertical-align: top;
-  margin-top: 18px;
-}
-
-.messages-page
+      vertical-align: top;
+      margin-top: 18px; }
+      /* line 192, D:/AvtoFix/css/style.scss */
+      .messages-page
 .messages-block-right
 .messages-content
 img + div {
-  vertical-align: inherit;
-  padding: 10px 0;
-}
-
-.messages-page
+        vertical-align: inherit;
+        padding: 10px 0; }
+    /* line 198, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .messages-content
 div {
-  vertical-align: top;
-}
-
-.messages-page
+      vertical-align: top; }
+    /* line 202, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .messages-content
 .checkbox {
-  margin-top: 25px;
-}
-
-.messages-page
+      margin-top: 25px; }
+    /* line 206, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .messages-content
 p.text {
-  text-overflow: inherit;
-  white-space: inherit;
-  overflow: inherit;
-}
-
-.messages-page
+      text-overflow: inherit;
+      white-space: inherit;
+      overflow: inherit; }
+  /* line 214, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-block-right
 .send-messages {
-  border-top: 1px solid #d8d8d8;
-  padding: 20px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.messages-page
+    border-top: 1px solid #d8d8d8;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff; }
+    /* line 223, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .send-messages
 textarea {
-  height: 74px;
-  width: 100%;
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 300;
-  color: #000;
-  font-style: italic;
-  border: 1px solid #d8d8d8;
-  margin-bottom: 20px;
-}
-
-.messages-page
+      height: 74px;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: 300;
+      color: #000;
+      font-style: italic;
+      border: 1px solid #d8d8d8;
+      margin-bottom: 20px; }
+    /* line 235, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .send-messages
 .add-file {
-  position: relative;
-  display: inline-block;
-}
-
-.messages-page
+      position: relative;
+      display: inline-block; }
+      /* line 239, D:/AvtoFix/css/style.scss */
+      .messages-page
 .messages-block-right
 .send-messages
 .add-file
 input[type='file'] {
-  font-size: 0;
-  width: 43px;
-  height: 30px;
-  cursor: pointer;
-  display: none;
-}
-
-.messages-page
+        font-size: 0;
+        width: 43px;
+        height: 30px;
+        cursor: pointer;
+        display: none; }
+      /* line 247, D:/AvtoFix/css/style.scss */
+      .messages-page
 .messages-block-right
 .send-messages
 .add-file
 label {
-  width: 43px;
-  height: 30px;
-  background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
-  display: inline-block;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 30px;
-  left: 0;
-  border: 1px solid #d8d8d8;
-  cursor: pointer;
-}
-
-.messages-page
+        width: 43px;
+        height: 30px;
+        background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
+        display: inline-block;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 30px;
+        left: 0;
+        border: 1px solid #d8d8d8;
+        cursor: pointer; }
+        /* line 263, D:/AvtoFix/css/style.scss */
+        .messages-page
 .messages-block-right
 .send-messages
 .add-file
 label
 i:before {
-  font-size: 18px;
-}
-
-.messages-page
+          font-size: 18px; }
+    /* line 269, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-block-right
 .send-messages
 .button {
-  border: none;
-  float: right;
-  margin-top: 0;
-  height: 30px;
-  line-height: 28px;
-}
+      border: none;
+      float: right;
+      margin-top: 0;
+      height: 30px;
+      line-height: 28px; }
 
+/* line 281, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-header {
   line-height: 52px;
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.messages-page
+  border-bottom: 1px solid #d8d8d8; }
+  /* line 288, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-header
 .select
 .custom-select-trigger {
-  padding: 0 20px 0 50px;
-}
-
-.messages-page
+    padding: 0 20px 0 50px; }
+    /* line 292, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-header
 .select
 .custom-select-trigger:before {
-  content: '\f01c';
-  font-family: 'FontAwesome';
-  position: absolute;
-  left: 18px;
-  font-size: 20px;
-}
+      content: '\f01c';
+      font-family: 'FontAwesome';
+      position: absolute;
+      left: 18px;
+      font-size: 20px; }
 
+/* line 303, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-header-bottom {
   line-height: 40px;
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.messages-page
+  border-bottom: 1px solid #d8d8d8; }
+  /* line 308, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-header-bottom
 a.button {
-  background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
-  border-radius: 5px;
-  width: 113px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #cfcfcf;
-  font-size: 12px;
-  float: right;
-  color: #000;
-  margin: 6px 15px 0 0;
-}
-
-.messages-page
+    background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
+    border-radius: 5px;
+    width: 113px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    font-size: 12px;
+    float: right;
+    color: #000;
+    margin: 6px 15px 0 0; }
+  /* line 325, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-header-bottom
 .custom-select {
-  background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
-  background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
-  border: 1px solid #cfcfcf;
-  border-radius: 5px;
-  line-height: 28px;
-  vertical-align: middle;
-}
-
-.messages-page
+    background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+    background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    line-height: 28px;
+    vertical-align: middle; }
+    /* line 337, D:/AvtoFix/css/style.scss */
+    .messages-page
 .messages-header-bottom
 .custom-select
 .custom-select-trigger {
-  font-size: 12px;
-  color: #000;
-  padding: 0 30px 0 15px;
-}
-
-.messages-page
+      font-size: 12px;
+      color: #000;
+      padding: 0 30px 0 15px; }
+      /* line 343, D:/AvtoFix/css/style.scss */
+      .messages-page
 .messages-header-bottom
 .custom-select
 .custom-select-trigger:after {
-  right: 13px;
-  width: 5px;
-  height: 5px;
-}
+        right: 13px;
+        width: 5px;
+        height: 5px; }
 
+/* line 352, D:/AvtoFix/css/style.scss */
 .messages-page
 .checkbox-menu {
   margin: 0 0 0 15px;
@@ -419,38 +388,35 @@ a.button {
   width: auto;
   position: relative;
   border: 1px solid #cfcfcf;
-  margin-right: 10px;
-}
-
-.messages-page
+  margin-right: 10px; }
+  /* line 365, D:/AvtoFix/css/style.scss */
+  .messages-page
 .checkbox-menu.active
 .checkbox-menu-submenu {
-  display: block;
-}
-
-.messages-page
+    display: block; }
+  /* line 370, D:/AvtoFix/css/style.scss */
+  .messages-page
 .checkbox-menu.active:after {
-  margin-top: 3px;
-  transform: rotate(-135deg) translateY(-50%);
-}
-
-.messages-page
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%); }
+  /* line 376, D:/AvtoFix/css/style.scss */
+  .messages-page
 .checkbox-menu:after {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 5px;
-  height: 5px;
-  top: 50%;
-  right: 9px;
-  margin-top: -1px;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  transform: rotate(45deg) translateY(-50%);
-  transition: all 0.4s ease-in-out;
-  transform-origin: 50% 0;
-}
+    position: absolute;
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    right: 9px;
+    margin-top: -1px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.4s ease-in-out;
+    transform-origin: 50% 0; }
 
+/* line 395, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 img {
@@ -459,47 +425,45 @@ img {
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 8px;
-}
-
-.messages-page
+  margin: 0 8px; }
+  /* line 404, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-content
 img + div {
-  width: calc(100% - 84px);
-}
+    width: calc(100% - 84px); }
 
+/* line 409, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 .checkbox {
-  margin-top: -5px;
-}
+  margin-top: -5px; }
 
+/* line 413, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 li {
   border-bottom: 1px solid #d8d8d8;
   line-height: 78px;
-  padding: 0 20px;
-}
+  padding: 0 20px; }
 
+/* line 419, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 h5.title {
   font-size: 15px;
   font-weight: 600;
-  color: #000;
-}
-
-.messages-page
+  color: #000; }
+  /* line 425, D:/AvtoFix/css/style.scss */
+  .messages-page
 .messages-content
 h5.title
 span {
-  font-size: 12px;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 15px;
-}
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 15px; }
 
+/* line 433, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 p.text {
@@ -507,228 +471,290 @@ p.text {
   font-weight: 300;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
+/* line 442, D:/AvtoFix/css/style.scss */
 .messages-page
 .messages-content
 div {
   display: inline-block;
   vertical-align: middle;
-  line-height: 24px;
-}
+  line-height: 24px; }
 
+/* line 454, D:/AvtoFix/css/style.scss */
 .select {
-  display: inline-block;
-}
-
-.select
+  display: inline-block; }
+  /* line 457, D:/AvtoFix/css/style.scss */
+  .select
 .custom-select {
-  position: relative;
-  display: inline-block;
-}
-
-.select
+    position: relative;
+    display: inline-block; }
+    /* line 462, D:/AvtoFix/css/style.scss */
+    .select
 .custom-select-wrapper {
-  position: relative;
-  display: inline-block;
-  user-select: none;
-}
-
-.select
+      position: relative;
+      display: inline-block;
+      user-select: none; }
+      /* line 468, D:/AvtoFix/css/style.scss */
+      .select
 .custom-select-wrapper
 select {
-  display: none;
-}
-
-.select
+        display: none; }
+    /* line 473, D:/AvtoFix/css/style.scss */
+    .select
 .custom-select-trigger {
-  position: relative;
-  display: block;
-  padding: 0 20px;
-  color: #3498db;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.select
+      position: relative;
+      display: block;
+      padding: 0 20px;
+      color: #3498db;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600; }
+      /* line 483, D:/AvtoFix/css/style.scss */
+      .select
 .custom-select-trigger:after {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 8px;
-  height: 8px;
-  top: 50%;
-  right: 3px;
-  margin-top: -1px;
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
-  transform: rotate(45deg) translateY(-50%);
-  transition: all 0.4s ease-in-out;
-  transform-origin: 50% 0;
-}
-
-.select
+        position: absolute;
+        display: block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        right: 3px;
+        margin-top: -1px;
+        border-bottom: 1px solid #000;
+        border-right: 1px solid #000;
+        transform: rotate(45deg) translateY(-50%);
+        transition: all 0.4s ease-in-out;
+        transform-origin: 50% 0; }
+    /* line 502, D:/AvtoFix/css/style.scss */
+    .select
 .custom-select.opened
 .custom-select-trigger:after {
-  margin-top: 3px;
-  transform: rotate(-135deg) translateY(-50%);
-}
-
-.select
+      margin-top: 3px;
+      transform: rotate(-135deg) translateY(-50%); }
+    /* line 507, D:/AvtoFix/css/style.scss */
+    .select
 .custom-select.opened
 .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  transform: translateY(0);
-}
-
-.select
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transform: translateY(0); }
+  /* line 518, D:/AvtoFix/css/style.scss */
+  .select
 .custom-options {
-  z-index: 100;
-  position: absolute;
-  display: block;
-  top: 100%;
-  left: 0;
-  right: 0;
-  min-width: 100%;
-  margin: 15px 0;
-  border: 1px solid #b5b5b5;
-  border-radius: 4px;
-  box-sizing: border-box;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
-  background: #fff;
-  transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(-15px);
-}
-
-.select
+    z-index: 100;
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    margin: 15px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px); }
+    /* line 540, D:/AvtoFix/css/style.scss */
+    .select
 .custom-options:before {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: 100%;
-  right: 3px;
-  top: -4px;
-  width: 7px;
-  height: 7px;
-  margin-bottom: -4px;
-  border-top: 1px solid #b5b5b5;
-  border-left: 1px solid #b5b5b5;
-  background: #fff;
-  transform: rotate(45deg);
-  transition: all 0.4s ease-in-out;
-}
-
-.select
+      position: absolute;
+      display: block;
+      content: '';
+      bottom: 100%;
+      right: 3px;
+      top: -4px;
+      width: 7px;
+      height: 7px;
+      margin-bottom: -4px;
+      border-top: 1px solid #b5b5b5;
+      border-left: 1px solid #b5b5b5;
+      background: #fff;
+      transform: rotate(45deg);
+      transition: all 0.4s ease-in-out; }
+    /* line 557, D:/AvtoFix/css/style.scss */
+    .select
 .custom-options
 .custom-option {
-  position: relative;
-  display: block;
-  text-align: center;
-  border-bottom: 1px solid #b5b5b5;
-  font-size: 14px;
-  font-weight: 300;
-  color: #b5b5b5;
-  line-height: 47px;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-
-.select
+      position: relative;
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #b5b5b5;
+      font-size: 14px;
+      font-weight: 300;
+      color: #b5b5b5;
+      line-height: 47px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out; }
+      /* line 570, D:/AvtoFix/css/style.scss */
+      .select
 .custom-options
 .custom-option:first-of-type {
-  border-radius: 4px 4px 0 0;
-}
-
-.select
+        border-radius: 4px 4px 0 0; }
+      /* line 574, D:/AvtoFix/css/style.scss */
+      .select
 .custom-options
 .custom-option:last-of-type {
-  border-bottom: 0;
-  border-radius: 0 0 4px 4px;
-}
-
-.select
+        border-bottom: 0;
+        border-radius: 0 0 4px 4px; }
+    /* line 581, D:/AvtoFix/css/style.scss */
+    .select
 .custom-options .custom-option:hover,
-.select
+    .select
 .custom-options
 .custom-option.selection {
-  background: #f9f9f9;
-}
-
-.select
+      background: #f9f9f9; }
+  /* line 586, D:/AvtoFix/css/style.scss */
+  .select
 .option-hover:before {
-  background: #f9f9f9;
-}
+    background: #f9f9f9; }
 
 @media only screen and (max-width: 1199px) {
+  /* line 598, D:/AvtoFix/css/style.scss */
   .tariff-plan
 .account-items
 .account-item {
     padding: 30px 15px;
-    width: calc(100% / 4.06 - 18.5px);
-  }
-}
+    width: calc(100% / 4.06 - 18.5px); } }
 
 @media only screen and (max-width: 991px) {
+  /* line 613, D:/AvtoFix/css/style.scss */
   .tariff-plan
 .account-items
 .account-item {
     padding: 30px 40px;
-    width: calc(100% / 2.05 - 6.5px);
-  }
-  .tariff-plan
+    width: calc(100% / 2.05 - 6.5px); }
+    /* line 618, D:/AvtoFix/css/style.scss */
+    .tariff-plan
 .account-items
 .account-item:nth-of-type(2n) {
-    margin-right: 0;
-  }
-}
+      margin-right: 0; }
+  /* line 627, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-block-left {
+    width: 330px; }
+  /* line 631, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-block-right {
+    width: calc(100% - 330px); } }
 
 @media only screen and (max-width: 767px) {
+  /* line 646, D:/AvtoFix/css/style.scss */
   .tariff-plan.banner
 img {
     width: auto;
-    height: 140px;
-  }
+    height: 140px; }
+  /* line 656, D:/AvtoFix/css/style.scss */
   .tariff-plan
 .account-items
 .account-item {
     padding: 30px 40px;
-    width: calc(100% / 2.06 - 6.5px);
-  }
-}
+    width: calc(100% / 2.06 - 6.5px); }
+  /* line 666, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-block-left {
+    width: 100%; }
+  /* line 670, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-block-right {
+    display: none;
+    width: 100%;
+    margin-left: 0; }
+    /* line 678, D:/AvtoFix/css/style.scss */
+    .messages-page
+.messages-block-right
+.messages-header
+.prev {
+      font-size: 18px;
+      font-weight: 600;
+      color: #3498db;
+      vertical-align: middle; }
+      /* line 684, D:/AvtoFix/css/style.scss */
+      .messages-page
+.messages-block-right
+.messages-header
+.prev
+i:before {
+        font-size: 24px;
+        color: #000;
+        vertical-align: middle;
+        top: -2px;
+        margin: 0 27px 0 20px;
+        position: relative; }
+  /* line 696, D:/AvtoFix/css/style.scss */
+  .messages-page
+h3.title {
+    font-size: 24px;
+    font-weight: 700;
+    display: table;
+    margin: 35px auto 25px; }
+    /* line 703, D:/AvtoFix/css/style.scss */
+    .messages-page
+h3.title + .button {
+      display: table;
+      margin: 0 auto;
+      width: 165px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 15px; } }
 
 @media only screen and (max-width: 590px) {
+  /* line 721, D:/AvtoFix/css/style.scss */
   .tariff-plan.banner
 h3.banner-title {
     margin-top: -30px;
-    padding: 0 20px;
-  }
+    padding: 0 20px; }
+  /* line 730, D:/AvtoFix/css/style.scss */
   .tariff-plan
 .account-items
 .account-item {
     padding: 30px 10px;
-    width: calc(100% / 2.076 - 6.5px);
-  }
-}
+    width: calc(100% / 2.076 - 6.5px); } }
 
 @media only screen and (max-width: 479px) {
+  /* line 745, D:/AvtoFix/css/style.scss */
   .tariff-plan.banner
 h3.banner-title {
     font-size: 27px;
-    padding: 0 10px;
-  }
+    padding: 0 10px; }
+  /* line 754, D:/AvtoFix/css/style.scss */
   .tariff-plan
 .account-items
 .account-item {
     padding: 30px 40px;
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  /* line 767, D:/AvtoFix/css/style.scss */
+  .messages-page
+.button {
+    width: 123px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-left: 10px; }
+  /* line 777, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-header-bottom
+a.button {
+    width: 80px;
+    margin: 6px 10px 0 0;
+    font-size: 10px; }
+  /* line 784, D:/AvtoFix/css/style.scss */
+  .messages-page
+.messages-content h5.title span {
+    margin-left: 0px;
+    display: block; }
+  /* line 791, D:/AvtoFix/css/style.scss */
+  .messages-page
+.custom-select
+.custom-select-trigger {
+    font-size: 11px; } }
 
 /*# sourceMappingURL=style.css.map */
