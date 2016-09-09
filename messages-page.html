@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!--START HEADER-->
+
+<header>
+    <div class="header-block-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-5 xs-hide">
+                    <!--лого-->
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!--поле поиска-->
+                    <div class="search">
+                        <input type="search" placeholder="Поиск мастера">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 mobile-header">
+                    <!--мобильное меню-->
+                    <i class="fa fa-bars mobile-menu" aria-hidden="true"></i>
+                    <!--логотип для мобильного-->
+                    <div class="logo logo-mobile">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <div class="right-block">
+
+                        <ul class="language">
+                            <li>
+                                <a href="#">Рус<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Рус</a></li>
+                                    <li><a href="#">En</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="balance">
+                            <li>
+                                <a href="#">Баланс <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <p class="header-sub-menu">Балансы <span>10 000 грн.</span><i class="fa fa-times" aria-hidden="true"></i></p>
+                                        <ul>
+                                            <li class="active"><a href="#">Финансы</a></li>
+                                            <li><a href="#">История транзакций</a></li>
+                                            <li><a href="#">Вывод средств</a></li>
+                                            <li><a href="#">Пополнить счёт</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!--Баланс для мобильной версии (кошелек)-->
+                        <ul class="balance-mobile">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-wallet1" aria-hidden="true"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <p class="header-sub-menu">Балансы <span>10 000 грн.</span><i class="fa fa-times" aria-hidden="true"></i></p>
+                                        <ul>
+                                            <li class="active"><a href="#">Финансы</a></li>
+                                            <li><a href="#">История транзакций</a></li>
+                                            <li><a href="#">Вывод средств</a></li>
+                                            <li><a href="#">Пополнить счёт</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="messages">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>
+                                    <span>2</span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <p class="header-sub-menu">Сообщения<i class="fa fa-times" aria-hidden="true"></i></p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/photo-2.png" alt="">
+                                                </a>
+                                                <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/photo-2.png" alt="">
+                                                </a>
+                                                <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф заинтересовался вашим проф</p>
+												</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/photo-2.png" alt="">
+                                                </a>
+                                                <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/photo-2.png" alt="">
+                                                </a>
+                                                <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                                            </li>
+                                        </ul>
+                                        <a href="#" class="all-messages">Смотреть все сообщения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="notify">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="user">
+                            <li>
+                                <a href="#">
+                                    <img src="images/photo-2.png" alt="">
+                                    <i class="fa fa-angle-down xs-hide" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-block-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <!--меню-->
+                    <ul class="menu">
+                        <li><a href="#">Мои проекты</a></li>
+                        <li><a href="#">Искать работу</a></li>
+                        <li><a href="#">Найти мастера</a></li>
+                        <li><a href="#">Помощь</a></li>
+                        <li><a href="#">Тарифные планы</a></li>
+                    </ul>
+                    <!--местоположение-->
+                    <a href="#" class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Моё местоположение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!--END HEADER-->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="messages-page">
+                    <h3 class="title">Мои сообщения</h3>
+                    <a href="#" class="button">Новое сообщение</a>
+                    <div class="messages-block">
+                        <div class="messages-block-left">
+                            <div class="messages-header">
+                                <div class="select">
+                                    <select name="sources" id="sources" class="custom-select sources" placeholder="Входящие">
+                                        <option value="profile">Входящие1</option>
+                                        <option value="word">Входящие2</option>
+                                        <option value="hashtag">Входящие3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="messages-header-bottom">
+                                <div class="checkbox-menu">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <ul class="checkbox-menu-submenu">
+                                        <li class="all"><a href="#">Все</a></li>
+                                        <li class="read"><a href="#">Прочитанные</a></li>
+                                        <li class="not-read"><a href="#">Непрочитанные</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="select">
+                                  <select name="sources" id="sources" class="custom-select sources" placeholder="Действия">
+                                    <option value="profile">Действия1</option>
+                                    <option value="word">Действия2</option>
+                                    <option value="hashtag">Действия3</option>
+                                  </select>
+                                </div>
+                                <a href="#" class="button">Очистить папку</a>
+                            </div>
+                            <ul class="messages-content">
+                                <li class="not-read">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test" type="checkbox">
+                                            <label for="test"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="not-read">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test3" type="checkbox">
+                                            <label for="test3"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-2.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="not-read">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test4" type="checkbox">
+                                            <label for="test4"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="active">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test5" type="checkbox">
+                                            <label for="test5"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-2.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li class="read">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test6" type="checkbox">
+                                            <label for="test6"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="messages-block-right">
+                            <div class="messages-header-bottom">
+                                <div class="checkbox-menu">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <ul class="checkbox-menu-submenu">
+                                        <li><a href="#">Все</a></li>
+                                        <li><a href="#">Ни одного</a></li>
+                                        <li><a href="#">Прочитанные</a></li>
+                                        <li><a href="#">Непрочитанные</a></li>
+                                        <li><a href="#">Помеченые</a></li>
+                                        <li><a href="#">Без пометок</a></li>
+                                    </ul>
+                                </div>
+                                <div class="select">
+                                    <select name="sources" id="sources" class="custom-select sources" placeholder="Действия">
+                                        <option value="profile">Действия1</option>
+                                        <option value="word">Действия2</option>
+                                        <option value="hashtag">Действия3</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                             <ul class="messages-content">
+                                <li>
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test" type="checkbox">
+                                            <label for="test"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test3" type="checkbox">
+                                            <label for="test3"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-2.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test4" type="checkbox">
+                                            <label for="test4"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test5" type="checkbox">
+                                            <label for="test5"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-2.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test6" type="checkbox">
+                                            <label for="test6"></label>
+                                        </p>
+                                    </div>
+                                    <img src="images/photo-1.png" alt="">
+
+                                    <div>
+                                        <h5 class="title">Никита Белый<span>сегодня, 18:00</span></h5>
+                                        <p class="text">Добрый вечер, заинтересовался вашим профилем....</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <div class="send-messages">
+                                <textarea name="#" id="#"  placeholder="Напишите ваше сообщение"></textarea>
+                                <div class="add-file">
+                                    <input type="file" id="file">
+                                    <label for="file"><i class="fa fa-paperclip" aria-hidden="true"></i></label>
+                                </div>
+                                <input type="submit" class="button" value="Отправить">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!--START FOOTER-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="logo"><img src="images/logo-footer.png" alt=""></div>
+          <ul class="soc">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#">Мои проекты</a></li>
+            <li><a href="#">Искать работу</a></li>
+            <li><a href="#">Найти мастера</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Тарифные планы</a></li>
+          </ul>
+          <div class="payment">
+            <h5>Доступные способы оплаты</h5>
+            <ul>
+              <li><i class="icon-privat"></i>Приват 24</li>
+              <li><i class="icon-yandex-monery"></i>ЯндексДеньги</li>
+              <li><i class="fa fa-usd" aria-hidden="true"></i>LiqPay</li>
+              <li><i class="fa fa-cc-visa" aria-hidden="true"></i>Visa</li>
+              <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i>Master card</li>
+            </ul>
+          </div>
+          <div class="subscription">
+            <h5>Подпишитесь на рассылку</h5>
+            <input type="email" placeholder="Введите e-mail">
+            <input type="submit" value="ОТПРАВИТЬ">
+          </div>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--END FOOTER-->
+<!--  <script src="js/jquery-2.1.4.min.js"></script> --- Неподходит для ползунка-->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.js"></script>
+  <script type="text/javascript">
+
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function() {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+
+
+    $('.checkbox-menu').each(function(){
+        $(this).click(function(){
+            $(this).toggleClass('active')
+        });
+    });
+</script>
+
+</body>
+
+</html>

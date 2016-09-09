@@ -273,7 +273,6 @@ $("#test1").click(function () {
   }else
     $('.td .checkbox input').addClass('checked');
 });
-
 $(".checkbox input").click(function () {
   $(this).toggleClass('checked');
 });
