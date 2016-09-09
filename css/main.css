@@ -1415,14 +1415,9 @@ section .search-user .item {
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.16);
   overflow: hidden;
   position: relative;
-  margin: 10px 25px 10px 0;
+  margin-bottom: 25px;
   padding: 15px 0 0;
-  width: calc(100% / 4.05 - 19px);
-  display: inline-block;
-}
-
-section .search-user .item:nth-of-type(4n) {
-  margin-right: 0;
+  box-sizing: border-box;
 }
 
 section .search-user .item .photo {
@@ -3286,7 +3281,7 @@ footer .subscription input[type="email"] {
     width: 100% !important;
     border-right: none !important;
   }
-  .map-master {
+  .map-master, .questions {
     display: none !important;
   }
   .sm-show {
@@ -3491,13 +3486,13 @@ footer .subscription input[type="email"] {
   .freelancer-search .slidCont {
     display: none;
   }
-  .container-search-masters .select-search, .container-search-masters .pogination, .see-resalts .pogination {
+  .masters-message .select-search, .masters-message .pogination, .see-resalts .pogination, .financial-report .tables {
     display: none !important;
   }
-  .container-search-masters .masters-message {
+   .masters-message {
     padding: 40px 20px;
   }
-  .container-search-masters .masters-message .messages {
+   .masters-message .messages {
     padding: 25px !important;
   }
   .container-search-masters .masters-message .messages .user + ul {
@@ -3506,6 +3501,18 @@ footer .subscription input[type="email"] {
   .see-resalts .show-more {
     margin-top: 30px !important;
   }
+  .my-profil h2.title {
+    display: block !important;
+    text-align: center;
+  }
+  .my-profil .buttons li{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .financial-report h3 {
+    text-align: left;
+  }
+  
 }
 
 @media only screen and (max-width: 530px) {
@@ -3577,13 +3584,25 @@ footer .subscription input[type="email"] {
     display: block;
   }
   .see-resalts .messages ul{
-    top: 70px;
-    left: 10px !important;
+    top: 80px;
+    left: 20px !important;
   }
    .see-resalts .messages p.status{
     position: absolute;
-    top: 40px;
+    top: 45px;
     right: 15px;
+  }
+  .my-profil .buttons li{
+    margin-left: auto !important;
+  }
+  .financial-report h3 {
+    text-align: center;
+    padding-left: 0 !important;
+  }
+  .financial-report h3 a.button {
+    display: block !important;
+    float: none !important;
+    margin: 0 auto 20px !important;
   }
 }
 
@@ -3613,6 +3632,54 @@ footer .subscription input[type="email"] {
   }
   header .right-block .messages .sub-menu {
     left: -220px !important
+  }
+  .user .skills li{
+    display: block !important;
+    margin: 10px auto !important;
+  }
+  .user .balance {
+    font-size: 18px !important;
+  }
+ .comments a.button {
+   float: none !important;
+   display: block !important;
+   margin: 10px auto !important;
+  }
+  .comments h3 {
+    text-align: center;
+  }
+  .comments .user-description {
+    width: 100% !important;
+    margin: auto !important;
+    padding-top: 10px;
+  }
+  .comments .user-description, .comments .comment img {
+    display: block !important;
+  }
+  .see-resalts .messages h4 span{
+    float: none;
+    padding: 10px 0;
+    display: block;
+  }
+  .see-resalts .messages ul{
+    top: 100px;
+  }
+   .see-resalts .messages p.status{
+    top: 45px;
+  }
+  .see-resalts .messages p.text {
+    padding-top: 50px;
+  }
+  .freelancer-search input[type="reset"] + input {
+    margin-left: 0 !important;
+    display: block !important;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+   .see-resalts .messages p.status{
+      top: 65px;
   }
 }
 
