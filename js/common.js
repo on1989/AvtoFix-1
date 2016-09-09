@@ -230,27 +230,19 @@ $(document).ready(function () {
 //START FREELANCER SEARCH
 
 //START INPUT CATEGORIES
-var categoriesMenu = 1
-$(".cat input").each(function () {
-  $(this).click(function () {
-    if (categoriesMenu) {
-      $(".categories").slideDown();
-      categoriesMenu = 0;
-    } else {
-      $(".categories").slideUp();
-      categoriesMenu = 1;
-    }
-  });
-});
+//var categoriesMenu = 1
+//$(".cat input").each(function () {
+//  $(this).click(function () {
+//    if (categoriesMenu) {
+//      $(".categories").slideDown();
+//      categoriesMenu = 0;
+//    } else {
+//      $(".categories").slideUp();
+//      categoriesMenu = 1;
+//    }
+//  });
+//});
 //END INPUT CATEGORIES
-
-//$('#tokenfield').tokenfield({
-//  autocomplete: {
-//    source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
-//    delay: 100
-//  },
-//  showAutocompleteOnFocus: true
-//})
 
 //START CHECKBOX MENU
 //var checkBoxMenu = 1;
@@ -512,6 +504,32 @@ $(document).ready(function () {
     }
   });
   
+  // Выпадающий список
+  
+  $('#tokenfield').tokenfield({
+            autocomplete: {
+                source: [
+                  {label: 'Диагностика  двигателей', value: 'Диагностика  двигателей', img_1: "icon-car_engine"}, 
+                  {label: 'Общая диагностика', value: 'Общая диагностика', img_1: "icon-car_look"},
+                  {label: 'Рихтовка', value: 'Рихтовка', img_1: "icon-car_look"},
+                  {label: 'Шиномантаж', value: 'Шиномантаж', img_1: "icon-car_tires"}
+                ],
+                delay: 100,
+                create: function () {
+                  $(this).data('ui-autocomplete')._renderItem = function (ul, item) {
+                    return $('<li>')
+                            .addClass('ui-menu-item')
+                            .append('<div class="ui-menu-item-wrapper"><i class="'+item.img_1 +'"></i><b>' + item.label + '</b><i class="fa fa-plus" aria-hidden="true"></i></div>')
+                            .appendTo(ul);
+                  };
+                }
+              },
+              showAutocompleteOnFocus: true,
+              typeahead: {
+                name: 'to',
+                header: '<span class="members">users<span>'
+              }
+          });
 
 
 });
