@@ -105,6 +105,7 @@ video {
   vertical-align: baseline;
 }
 
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -645,7 +646,7 @@ section .slider .item .name {
 
 section .slider .item .by-rating {
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   color: #000;
   font-style: italic;
   margin: 13px 0 17px;
@@ -799,6 +800,7 @@ section .order-head p.text {
   margin-top: 20px;
   margin-bottom: 25px;
   line-height: 1.2;
+  text-align: justify;
 }
 
 section .messages .user,
@@ -986,19 +988,17 @@ section .order .order-head ul {
 
 section .order .order-head ul li:last-of-type {
   float: right;
+  width: 260px;
   text-align: center;
-  margin-right: 20px;
+  background: #3497da;
+  margin-right: -1px;
 }
 
-section .order .order-head ul .button {
+section .order .order-head ul li:last-of-type a {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  width: 165px;
-  padding: 10px 20px;
-  background-color: #3498db;
-  text-align: center;
-  border-radius: 5px;
+  height: 100%;
 }
 
 section .order .price {
@@ -1209,7 +1209,7 @@ section .ready-to-perform .tr .th:nth-of-type(2) {
 section .ready-to-perform .tr .td:nth-of-type(2) p,
 section .ready-to-perform .tr .th:nth-of-type(2) p {
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   margin-top: 5px;
 }
 
@@ -1443,7 +1443,7 @@ section .search-user .item .name {
 
 section .search-user .item .by-rating {
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   color: #000;
   font-style: italic;
   margin: 13px 0 17px;
@@ -1927,6 +1927,10 @@ section .comments .comment-text {
   text-align: right;
   padding-right: 20px;
   padding-top: 15px;
+  text-align: justify;
+}
+section .comments .comment{
+  overflow: hidden;
 }
 
 .my-profil .order-tracker .comments {
@@ -3076,13 +3080,35 @@ footer .subscription input[type="email"] {
 .burger-menu {
   display: none;
 }
-
+.sm-show {
+  display: none;
+}
 @media only screen and (max-width: 1199px) {
   header .right-block ul li:nth-child(2) a {
     margin-left: 10px;
   }
   header .right-block ul li a {
     width: 155px;
+  }
+  header .right-block .sub-menu {
+    text-align: left !important;
+  }
+
+  header .right-block .sub-menu ul li, header .right-block .sub-menu a.all-messages{
+    width: 100% !important;
+  }
+  header .right-block .messages .sub-menu ul li a {
+    margin: 0;
+  }
+  header .right-block .messages .sub-menu ul li a:first-child {
+    width: 23% !important;
+    text-align: center;
+  }
+  header .right-block .messages .sub-menu ul li a:last-child {
+    width: 74% !important;
+  }
+  header .right-block .messages .sub-menu img {
+    margin: 0;
   }
   header .menu li {
     display: inline-block;
@@ -3137,6 +3163,33 @@ footer .subscription input[type="email"] {
   }
   footer .payment li {
     margin-right: 15px;
+  }
+  .order-tracker .nav-tabs li{
+    width: auto !important;
+    margin: 0 15px;
+  }
+  .tab-pane .tr {
+    width: 100% !important;
+  }
+  .tab-pane .table-row-name .th, .tab-content .td{
+    padding-left: 0 !important;
+    width: 24.3% !important;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  .tab-content .td:first-child {
+    text-align: left;
+    padding-left: 10px !important;
+  }
+  .tables .tr .th, .tables .tr .td {
+    width: 20% !important;
+    box-sizing: border-box;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .tables .tr .th:nth-child(2), .tables .tr .td:nth-child(2) {
+    width: 38% !important;
   }
 }
 
@@ -3217,6 +3270,37 @@ footer .subscription input[type="email"] {
     height: 25px;
     font-size: 15px;
     line-height: 26px;
+  }
+  .add-balance .refill div {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+  }
+  .my-profil {
+    text-align: center !important;
+  }
+  .table .order-tracker {
+    display: none !important;
+  }
+  .table .user {
+    width: 100% !important;
+    border-right: none !important;
+  }
+  .map-master {
+    display: none !important;
+  }
+  .sm-show {
+    display: block !important;
+  }
+  section .comments .comment {
+    padding: 20px 30px;
+  }
+  section .comments .comment img{
+    margin-left: 0;
+  }
+  section .comments .comment-text {
+    width: 100%;
+    float: none;
   }
 }
 
@@ -3317,6 +3401,7 @@ footer .subscription input[type="email"] {
   header .right-block {
     width: calc(100% - 151px);
     display: inline-block;
+    text-align: right;
   }
   header .right-block .language,
   header .right-block .balance {
@@ -3378,8 +3463,8 @@ footer .subscription input[type="email"] {
   section .messages:last-child {
     margin-bottom: 20px;
   }
-  .freelancer-search .search-orders {
-    margin-bottom: 10px;
+    .freelancer-search .search-orders + label {
+    margin: 10px 0 25px;
   }
   .freelancer-search .search-orders h2.title {
     text-align: center;
@@ -3391,17 +3476,56 @@ footer .subscription input[type="email"] {
     margin-left: 0 !important;
     margin-top: 25px;
   }
-  
+  .freelancer-search .select {
+    margin-top: 10px;
+  }
+  .freelancer-search .range-input {
+    padding: 0;
+  }
+  .freelancer-search .range-input #minCost {
+    margin-left: 0;
+  }
+  .freelancer-search .range-input #minCost, .freelancer-search .range-input #maxCost {
+    height: 40px;
+  }
+  .freelancer-search .slidCont {
+    display: none;
+  }
+  .container-search-masters .select-search, .container-search-masters .pogination, .see-resalts .pogination {
+    display: none !important;
+  }
+  .container-search-masters .masters-message {
+    padding: 40px 20px;
+  }
+  .container-search-masters .masters-message .messages {
+    padding: 25px !important;
+  }
+  .container-search-masters .masters-message .messages .user + ul {
+    left: 20px;
+  }
+  .see-resalts .show-more {
+    margin-top: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  section .messages h4, section .messages h4 span {
+    font-size: 18px !important;
+  }
+  header .right-block .sub-menu {
+    width: 400px;
+    left: -250px
+  }
+}
 
 @media only screen and (max-width: 480px) {
   header .header-block-1 {
     line-height: 35px;
   }
   header .right-block {
-    width: 60%;
-    text-align: center;
+    text-align: right;
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   header .logo.logo-mobile {
     position: absolute;
@@ -3411,12 +3535,22 @@ footer .subscription input[type="email"] {
     margin: 0 auto;
     top: 20px;
   }
-  header .balance-mobile, header .notify, header .message {
-    margin-right: 20px;
+  header .balance-mobile, header .notify, header .messages {
+    margin-right: 15px;
   }
   header .right-block .sub-menu {
+    box-sizing: border-box;
     width: 320px;
-    left: -170px;
+    left: -190px;
+  }
+  header .right-block .sub-menu:before {
+    right: 105px;
+  }
+  header .header-block-1 .mobile-menu {
+    padding: 10px 5px !important;
+  }
+  header .header-block-1 .logo.logo-mobile {
+    left: 70px;
   }
   section ul.advantage {
     margin: 55px 0 40px;
@@ -3428,11 +3562,57 @@ footer .subscription input[type="email"] {
   section ul.advantage + .button {
     width: 90%;
   }
+  .container-search-masters .masters-message {
+    padding: 15px 10px !important;
+  }
+  .see-resalts .messages {
+    padding: 15px !important;
+  }
+  .see-resalts .messages h4 {
+    font-size: 24px;
+  }
+  .see-resalts .messages h4 span{
+    float: none;
+    padding: 10px 0;
+    display: block;
+  }
+  .see-resalts .messages ul{
+    top: 70px;
+    left: 10px !important;
+  }
+   .see-resalts .messages p.status{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
   section.landing .container-fluid h1.title {
     font-size: 22px;
+  }
+  header .logo.logo-mobile {
+    margin-left: 20px;
+  }
+  header .right-block {
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  header .right-block .balance-mobile, header .right-block .messages, header .right-block .notify, header .right-block .user {
+    margin: auto 20px;
+  }
+   header .right-block .sub-menu {
+    box-sizing: border-box;
+    width: 300px;
+  }
+   header .right-block .balance-mobile .sub-menu {
+    left: -150px !important
+  }
+  header .right-block .messages .sub-menu {
+    left: -220px !important
   }
 }
 
@@ -3531,6 +3711,7 @@ span.plus {
 .freelancer-search .search-orders .title {
   margin: 0;
 }
+
 .range {
   overflow: hidden;
   margin: 10px 0;

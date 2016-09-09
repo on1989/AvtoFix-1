@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>My Profil</title>
-    <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/icon.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/dropzone.css" />
+  <meta charset="UTF-8">
+  <title>My Profil</title>
+  <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropzone.css" />
 </head>
+
 <body>
 
-<!--START HEADER-->
-<header>
+  <!--START HEADER-->
+  <header>
     <div class="header-block-1">
       <div class="container">
         <div class="row">
@@ -184,599 +186,814 @@
       </div>
     </div>
   </header>
-<!--END HEADER-->
+  <!--END HEADER-->
 
-<!--START CONTENT-->
+  <!--START CONTENT-->
 
-<section ng-app="app" ng-controller="RatingController as rating" class="container-star">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="my-profil">
-					<h2 class="title">Мой профиль</h2>
-					<ul class="buttons">
-						<li><a href="#">Редактировать</a></li>
-						<li><a href="#" data-toggle="modal" data-target=".add-order">Добавить заказ</a></li>
-					</ul>
-					<div class="table">
-						<div class="user">
-							<img src="images/photo-2.png" alt="" class="user-photo">
-							<h3 class="name">Антон Чехов</h3>
-							<div star-rating ng-model="rating.rating1" max="5" on-rating-select="rating.rateFunction(rating)"></div>
-							<p class="by-rating">(<span>150</span> оставленных отзывов)</p>
-							<p class="city"><i class="fa fa-map-marker" aria-hidden="true"></i>Украина, г. Харьков</p>
-							<h2 class="balance"><i class="icon-wallet"></i>Баланс - <span>10 000 грн.</span></h2>
-							<p class="about-my">Обо мне</p>
-							<p class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed</p>
-						</div>
-						<div class="order-tracker">
-							<h3>Трекер заказов</h3>
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#pending" data-toggle="tab">В ожидании</a></li>
-								<li><a href="#executes-orders" data-toggle="tab">Выполняемые заказы <span>(15)</span></a></li>
-								<li><a href="#completed-orders" data-toggle="tab">Выполненные заказы</a></li>
-								
-							</ul>
-							<div class="tr">
-								<div class="th">
-									<h5>Название</h5>
-								</div>
-								<div class="th">
-									<h5>Исполнитель</h5>
-								</div>
-								<div class="th">
-									<h5>Выполнить до</h5>
-								</div>
-								<div class="th">
-									<h5>Ставка</h5>
-								</div>
-							</div>
-							<div class="tab-content">
-								<div class="tab-pane active" id="pending">
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>5000 грн.</span></p></div>
-									</div>
-								</div>
-								<div class="tab-pane" id="executes-orders">
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>51000 грн.</span></p></div>
-									</div>
-								</div>
-								<div class="tab-pane" id="completed-orders">
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-									
-									<div class="tr">
-										<div class="td"><h5>Ремонт двигателя автомобиля</h5></div>
-										<div class="td"><a href="#">Константин Плахутин</a></div>
-										<div class="td"><p>20.08.16</p></div>
-										<div class="td"><p><span>15000 грн.</span></p></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="financial-report">
-						<h3>Финансовые отчёты<a href="#" class="button">Смотреть все отчёты</a></h3>
-					<div class="tables">
-						<div class="tr">
-							<div class="th">
-								<h5>Дата</h5>
-							</div>
-							<div class="th">
-								<h5>Операция</h5>
-							</div>
-							<div class="th">
-								<h5>Сумма</h5>
-							</div>
-							<div class="th">
-								<h5>Остаток</h5>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-					</div>	
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<hr class="sline">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-				<div class="have-questions">
-					<h2 class="title center">Есть вопросы?</h2>
-					<a href="#" class="button" data-toggle="modal" data-target=".contact-admin">Связаться с администратором</a>
-					<i class="icon-question"></i>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<!--END CONTENT-->
-
-<!--START FOOTER-->
-<footer>
+  <section ng-app="app" ng-controller="RatingController as rating" class="container-star">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="logo"><img src="images/logo-footer.png" alt=""></div>
-                <ul class="soc">
-                	<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                	<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                	<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="my-profil">
+            <h2 class="title">Мой профиль</h2>
+            <ul class="buttons">
+              <li><a href="#">Редактировать</a></li>
+              <li><a href="#" data-toggle="modal" data-target=".add-order">Добавить заказ</a></li>
+            </ul>
+            <div class="table">
+              <div class="user">
+                <img src="images/photo-2.png" alt="" class="user-photo">
+                <h3 class="name">Антон Чехов</h3>
+                <div star-rating ng-model="rating.rating1" max="5" on-rating-select="rating.rateFunction(rating)"></div>
+                <p class="by-rating">(<span>150</span> оставленных отзывов)</p>
+                <p class="city"><i class="fa fa-map-marker" aria-hidden="true"></i>Украина, г. Харьков</p>
+                <h2 class="balance"><i class="icon-wallet"></i>Баланс - <span>10 000 грн.</span></h2>
+                <p class="about-my">Обо мне</p>
+                <p class="text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed</p>
+              </div>
+              <div class="order-tracker">
+                <h3>Трекер заказов</h3>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#pending" data-toggle="tab">В ожидании</a></li>
+                  <li><a href="#executes-orders" data-toggle="tab">Выполняемые заказы <span>(15)</span></a></li>
+                  <li><a href="#completed-orders" data-toggle="tab">Выполненные заказы</a></li>
+
                 </ul>
-                <ul class="menu">
-                	<li><a href="#">Мои проекты</a></li>
-                	<li><a href="#">Искать работу</a></li>
-                	<li><a href="#">Найти мастера</a></li>
-                	<li><a href="#">Помощь</a></li>
-                	<li><a href="#">Тарифные планы</a></li>
-                </ul>
-                <div class="payment">
-                	<h5>Доступные способы оплаты</h5>
-                	<ul>
-                		<li><i class="icon-privat"></i>Приват 24</li>
-                		<li><i class="icon-yandex-monery"></i>ЯндексДеньги</li>
-                		<li><i class="fa fa-usd" aria-hidden="true"></i>LiqPay</li>
-                		<li><i class="fa fa-cc-visa" aria-hidden="true"></i>Visa</li>
-                		<li><i class="fa fa-cc-mastercard" aria-hidden="true"></i>Master card</li>
-                	</ul>
+                <div class="tab-content">
+                  <!--контент таба "В ожидании"-->
+                  <div class="tab-pane active" id="pending">
+                   
+                    <!--названия столбцов-->
+                    <div class="table-row-name">
+                      <div class="tr">
+                        <div class="th">
+                          <h5>Название</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Заказчик</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Выполнить до</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Ставка</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- список выполненняемых заказов -->
+                    <div class="tab-content">
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="show-more search"><i class="fa fa-refresh" aria-hidden="true"></i>Показать больше</a>
+                    <br>
+                    <br>
+                  </div>
+
+                  <!--контент таба "Выполняемые заказы"-->
+                  <div class="tab-pane" id="executes-orders">
+                    <!--названия столбцов-->
+                    <div class="table-row-name">
+                      <div class="tr">
+                        <div class="th">
+                          <h5>Название</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Заказчик</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Выполнить до</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Ставка</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- список выполненняемых заказов -->
+                    <div class="tab-content">
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>51000 грн.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="show-more search"><i class="fa fa-refresh" aria-hidden="true"></i>Показать больше</a>
+                    <br>
+                    <br>
+                  </div>
+
+                  <!--контент таба "Сделанные заказы"-->
+                  <div class="tab-pane" id="completed-orders">
+                    <!--названия столбцов-->
+                    <div class="table-row-name">
+                      <div class="tr">
+                        <div class="th">
+                          <h5>Название</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Заказчик</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Выполнить до</h5>
+                        </div>
+                        <div class="th">
+                          <h5>Ставка</h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- список выполненных заказов -->
+                    <div class="tab-content">
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+
+                      <div class="tr">
+                        <div class="td">
+                          <h5>Ремонт двигателя автомобиля</h5></div>
+                        <div class="td"><a href="#">Константин Плахутин</a></div>
+                        <div class="td">
+                          <p>20.08.16</p>
+                        </div>
+                        <div class="td">
+                          <p><span>15000 грн.</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="show-more search"><i class="fa fa-refresh" aria-hidden="true"></i>Показать больше</a>
+                    <br>
+                    <br>
+                  </div>
                 </div>
-                <div class="subscription">
-                	<h5>Подпишитесь на рассылку</h5>
-                	<input type="email" placeholder="Введите e-mail">
-                	<input type="submit" value="ОТПРАВИТЬ">
-                </div>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+              </div>
             </div>
+            <div class="financial-report">
+              <h3>Финансовые отчёты<a href="#" class="button">Смотреть все отчёты</a></h3>
+              <div class="tables">
+                <div class="tr">
+                  <div class="th">
+                    <h5>Дата</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Операция</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Сумма</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Остаток</h5>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p>Оплата ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <p>5000 грн.</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-<!--END FOOTER-->
-<!--START MODAL-->
-<div class="modal fade contact-admin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h4 class="modal-title">Связаться с администратором</h4>
-			<i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
-		</div>
-		<form action="#">
-			<input type="text" placeholder="Ваше имя">
-			<input type="email" placeholder="Электронная почта">
-			<textarea name="#" id="#" placeholder="Опишите ваш вопрос"></textarea>
-			<input type="submit" value="Связаться">
-		</form>
-	</div>
-</div>
-</div>
+    <hr class="sline">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <div class="have-questions">
+            <h2 class="title center">Есть вопросы?</h2>
+            <a href="#" class="button" data-toggle="modal" data-target=".contact-admin">Связаться с администратором</a>
+            <i class="icon-question"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<div class="modal fade add-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h4 class="modal-title">Связаться с администратором</h4>
-			<i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
-		</div>
-		<form action="#">
-			<div class="select">
-				<select name="" id="">
-					<option value="">Выберите категорию</option>
-					<option value="">Выберите категорию</option>
-					<option value="">Выберите категорию</option>
-					<option value="">Выберите категорию</option>
-				</select>
-			</div>
-			<div class="select">
-				<select name="" id="">
-					<option value="">Выберите способ оплаты</option>
-					<option value="">Выберите способ оплаты</option>
-					<option value="">Выберите способ оплаты</option>
-					<option value="">Выберите способ оплаты</option>
-				</select>
-			</div>
-			<input type="text" placeholder="Название заказа">
-			<div class="select">
-				<select name="" id="">
-					<option value="">Выберите срочность заказа</option>
-					<option value="">Выберите срочность заказа</option>
-					<option value="">Выберите срочность заказа</option>
-					<option value="">Выберите срочность заказа</option>
-				</select>
-			</div>
-			<div class="maps">
-				<input type="text" placeholder="Ваше местоположения">
-				<i class="fa fa-map-marker" aria-hidden="true"></i>
-				<div id="map"></div>
-			</div>
-			<textarea name="#" id="#" placeholder="Опишите ваш заказ..."></textarea>
-		</form>
-		<div id="dropzone">
-		  <form action="/upload" class="dropzone needsclick" id="demo-upload">
-			<div class="dz-message needsclick">
-			  <span class="text">
+  <!--END CONTENT-->
+
+  <!--START FOOTER-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="logo"><img src="images/logo-footer.png" alt=""></div>
+          <ul class="soc">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#">Мои проекты</a></li>
+            <li><a href="#">Искать работу</a></li>
+            <li><a href="#">Найти мастера</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Тарифные планы</a></li>
+          </ul>
+          <div class="payment">
+            <h5>Доступные способы оплаты</h5>
+            <ul>
+              <li><i class="icon-privat"></i>Приват 24</li>
+              <li><i class="icon-yandex-monery"></i>ЯндексДеньги</li>
+              <li><i class="fa fa-usd" aria-hidden="true"></i>LiqPay</li>
+              <li><i class="fa fa-cc-visa" aria-hidden="true"></i>Visa</li>
+              <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i>Master card</li>
+            </ul>
+          </div>
+          <div class="subscription">
+            <h5>Подпишитесь на рассылку</h5>
+            <input type="email" placeholder="Введите e-mail">
+            <input type="submit" value="ОТПРАВИТЬ">
+          </div>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--END FOOTER-->
+  <!--START MODAL-->
+  <div class="modal fade contact-admin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Связаться с администратором</h4>
+          <i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
+        </div>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя">
+          <input type="email" placeholder="Электронная почта">
+          <textarea name="#" id="#" placeholder="Опишите ваш вопрос"></textarea>
+          <input type="submit" value="Связаться">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade add-order" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Связаться с администратором</h4>
+          <i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
+        </div>
+        <form action="#">
+          <div class="select">
+            <select name="" id="">
+              <option value="">Выберите категорию</option>
+              <option value="">Выберите категорию</option>
+              <option value="">Выберите категорию</option>
+              <option value="">Выберите категорию</option>
+            </select>
+          </div>
+          <div class="select">
+            <select name="" id="">
+              <option value="">Выберите способ оплаты</option>
+              <option value="">Выберите способ оплаты</option>
+              <option value="">Выберите способ оплаты</option>
+              <option value="">Выберите способ оплаты</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Название заказа">
+          <div class="select">
+            <select name="" id="">
+              <option value="">Выберите срочность заказа</option>
+              <option value="">Выберите срочность заказа</option>
+              <option value="">Выберите срочность заказа</option>
+              <option value="">Выберите срочность заказа</option>
+            </select>
+          </div>
+          <div class="maps">
+            <input type="text" placeholder="Ваше местоположения">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <div id="map"></div>
+          </div>
+          <textarea name="#" id="#" placeholder="Опишите ваш заказ..."></textarea>
+        </form>
+        <div id="dropzone">
+          <form action="/upload" class="dropzone needsclick" id="demo-upload">
+            <div class="dz-message needsclick">
+              <span class="text">
 			  <img src="http://www.freeiconspng.com/uploads/------------------------------iconpngm--22.png" alt="Camera" />
 					Добавить фото к заказу (до 5 фото, не более 2 мб)
 			  </span>
-			  <span class="plus">+</span>
-			</div>
-		  </form>
-		</div>
-		<form action="">
-			<input type="submit" value="Опубликовать">
-		</form>
-		</div>
-	</div>
-</div>
+              <span class="plus">+</span>
+            </div>
+          </form>
+        </div>
+        <form action="">
+          <input type="submit" value="Опубликовать">
+        </form>
+      </div>
+    </div>
+  </div>
 
-<!--END MODAL-->
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="js/dropzone.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script  src="js/common.js"></script>
+  <!--END MODAL-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
+
 </html>
