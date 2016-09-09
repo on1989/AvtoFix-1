@@ -988,17 +988,19 @@ section .order .order-head ul {
 
 section .order .order-head ul li:last-of-type {
   float: right;
-  width: 260px;
   text-align: center;
-  background: #3497da;
-  margin-right: -1px;
+  margin-right: 20px;
 }
 
-section .order .order-head ul li:last-of-type a {
+section .order .order-head ul .button {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
-  height: 100%;
+  width: 165px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  text-align: center;
+  border-radius: 5px;
 }
 
 section .order .price {
@@ -3296,6 +3298,29 @@ footer .subscription input[type="email"] {
   section .comments .comment-text {
     width: 100%;
     float: none;
+  }
+  section .order .order-head p.status, section .order .order-head ul {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+  section .order .order-head ul li:last-of-type, .order .user-description img.users, .order .user-description .description {
+    float: none !important;
+    display: block;
+    margin: 20px auto !important;
+  }
+  section .order .order-head ul li:last-of-type {
+    margin: 0 auto !important;
+  }
+  section .order .user-description, section .order .user-location, section .order h2.title.price {
+    width: 100%;
+    text-align: center;
+  }
+  section .order .user-location, section .order .user-description h4, section .order .user-description ul.skills {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0;
   }
 }
 

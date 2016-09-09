@@ -279,6 +279,15 @@ $(".checkbox input").click(function () {
 
 //END CHECKBOX MENU
 
+// lightBox
+  $(function(){
+    if ($(".photo a").length > 0)
+    $(".photo a").lightBox({
+      container: false
+    });
+  });
+// END lightBox
+
 //START ATR MENU
 var actMenu = 1
 $(".act .button").each(function () {
@@ -433,7 +442,10 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   // ПОЛЗУНОК
-  $("#slider").slider({
+  
+  $(function(){
+    if ($("#slider").length > 0) {
+      $("#slider").slider({
     step: 100,
     range: true,
     min: 100,
@@ -499,6 +511,9 @@ $(document).ready(function () {
     if (!/\d/.test(keyChar)) return false;
 
   });
+    }
+  });
+  
 
 
 });
