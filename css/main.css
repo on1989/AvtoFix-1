@@ -3192,9 +3192,6 @@ footer .subscription input[type="email"] {
   .tables .tr .th:nth-child(2), .tables .tr .td:nth-child(2) {
     width: 38% !important;
   }
-  #ui-id-1 {
-    width: 87% !important;
-  }
   section .order .user-description, section .order .user-location {
     width: 50%;
     box-sizing: border-box;
@@ -3316,6 +3313,9 @@ footer .subscription input[type="email"] {
   }
   .sm-show {
     display: block !important;
+  }
+  section .comments .user-description {
+    width: 50%;
   }
   section .comments .comment {
     padding: 20px 30px;
@@ -3458,14 +3458,35 @@ footer .subscription input[type="email"] {
     z-index: 100;
     height: auto;
   }
-  header .menu li {
+  header.landing-page .mob-header {
+    position: relative;
+  }
+  header.landing-page .mob-menu-landing {
+    top: 70px !important;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: -webkit-linear-gradient(180deg, #3498db 0%, #3a7bd5 100%);
+    background: -moz-linear-gradient(180deg, #3498db 0%, #3a7bd5 100%);
+    background: -o-linear-gradient(180deg, #3498db 0%, #3a7bd5 100%);
+    background: -ms-linear-gradient(180deg, #3498db 0%, #3a7bd5 100%);
+    background: linear-gradient(-90deg, #3498db 0%, #3a7bd5 100%);
+    top: 0;
+    text-align: center;
+    z-index: 100;
+    height: auto;
+  }
+  header .menu li, header.landing-page .mob-menu-landing li {
     display: block;
     line-height: 80px;
     position: relative;
     margin: 0;
     text-align: center;
   }
-  header .menu li:hover a {
+  header.landing-page .mob-menu-landing a {
+    color: #fff;
+  }
+  header .menu li:hover a, header.landing-page .mob-menu-landing li:hover a {
     font-size: 20px;
   }
   header .header-block-1 .xs-hide {
@@ -3774,10 +3795,16 @@ footer .subscription input[type="email"] {
     width: 300px;
   }
    header .right-block .balance-mobile .sub-menu {
-    left: -150px !important
+    left: -20px !important;
+  }
+  header .right-block .balance-mobile .sub-menu:before {
+    right: 220px !important;
   }
   header .right-block .messages .sub-menu {
-    left: -220px !important
+    left: -95px !important;
+  }
+  header .right-block .messages .sub-menu:before {
+    right: 180px !important;
   }
   .user .skills li{
     display: block !important;
@@ -4081,11 +4108,19 @@ span.plus {
 .priority-selection label input {
   margin-right: 15px;
 }
-#ui-id-1 {
-  width: 750px;
+.autocomplete-suggestions {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  border-top: none;
+  overflow-y: scroll;
 }
-#ui-id-1 .ui-menu-item {
-  margin: 5px;
+.autocomplete-suggestions .autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+.autocomplete-suggestions .autocomplete-suggestion:hover {
+  background-color: #e3e3e3;
 }
 .why_us {
   background-color: #fcfcfc;
@@ -4102,6 +4137,9 @@ span.plus {
 .why_us .text {
   text-align: justify;
 }
+header.landing-page .mob-menu-landing {
+    display: none;
+  }
 /*  end Alina  */
 
 
