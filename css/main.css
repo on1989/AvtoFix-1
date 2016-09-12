@@ -1103,6 +1103,7 @@ section .order p.text {
   line-height: 1.2;
   padding-right: 20px;
   margin-top: 20px;
+  text-align: justify;
 }
 
 section .order .user-description,
@@ -1131,7 +1132,9 @@ section .order .user-location h4 {
   text-align: right;
   margin-top: 0;
 }
-
+section .order .user-location .photo {
+  text-align: right;
+}
 section .order .user-location img {
   width: calc(100% / 3.05 - 7px);
   margin-left: 10px;
@@ -3192,6 +3195,21 @@ footer .subscription input[type="email"] {
   #ui-id-1 {
     width: 87% !important;
   }
+  section .order .user-description, section .order .user-location {
+    width: 50%;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+  }
+  section .order .user-location {
+    padding-right: 20px;
+  }
+  section .order  img.users {
+    margin: 29px 50px 0;
+  }
+  section .order  .description {
+    margin-left: 30px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -3650,17 +3668,25 @@ footer .subscription input[type="email"] {
   }
   .see-resalts .messages h4 span{
     float: none;
-    padding: 10px 0;
     display: block;
   }
   .see-resalts .messages ul{
     top: 80px;
-    left: 20px !important;
+    left: 15px !important;
   }
-   .see-resalts .messages p.status{
+   .see-resalts .messages p.status, .see-resalts .messages h4 span{
     position: absolute;
     top: 45px;
     right: 15px;
+  }
+  .see-resalts .messages p.status {
+    top: 35px;
+  }
+  .see-resalts .messages h4 span {
+    left: 15px;
+  }
+  .see-resalts .messages p.text {
+    padding-top: 80px;
   }
   .my-profil .buttons li{
     margin-left: auto !important;
@@ -3673,6 +3699,9 @@ footer .subscription input[type="email"] {
     display: block !important;
     float: none !important;
     margin: 0 auto 20px !important;
+  }
+  .container-star .title.left {
+    text-align: center;
   }
 }
 
@@ -3726,31 +3755,39 @@ footer .subscription input[type="email"] {
   .comments .user-description, .comments .comment img {
     display: block !important;
   }
-  .see-resalts .messages h4 span{
-    float: none;
-    padding: 10px 0;
-    display: block;
-  }
+  
   .see-resalts .messages ul{
-    top: 100px;
+    top: 90px;
   }
    .see-resalts .messages p.status{
-    top: 45px;
+    top: 40px;
   }
   .see-resalts .messages p.text {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .freelancer-search input[type="reset"] + input {
     margin-left: 0 !important;
     display: block !important;
     margin-bottom: 20px;
   }
+  .order .order-head ul {
+    margin-bottom: 15px;
+  }
+  .order .user-description h2 span, .order .user-description .description h5 span, .order .user-description .stars ~ p {
+    display: block;
+    margin-top: 10px
+  }
+  .order .photo {
+    text-align: center !important;
+  }
+  .order .photo img {
+    width: auto;
+    height: auto !important;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-   .see-resalts .messages p.status{
-      top: 65px;
-  }
+  
 }
 
 #dropzone {
