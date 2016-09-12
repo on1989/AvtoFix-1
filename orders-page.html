@@ -13,9 +13,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <!-- jQuery UI CSS -->
   <link href="jquery-ui.min.css" type="text/css" rel="stylesheet">
-  <!-- Bootstrap styling for Typeahead -->
-  <link href="css/tokenfield-typeahead.css" type="text/css" rel="stylesheet">
-  <link href="css/bootstrap-tokenfield.css" type="text/css" rel="stylesheet">
+  <link href="css/jquery.tokenize.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
 
@@ -205,39 +203,36 @@
                 <label for="" class=" col-lg-4 col-md-12 control-label">
                   <h2 class="title left">Доступные заказы по навыкам</h2></label>
                 <div class="input col-lg-8 col-md-12">
-                  <input type="search" placeholder="Поиск заказов по названию" id="search-orders">
+                  <input type="search" placeholder="Поиск заказов по названию" id="autocomplete" class="search-orders-input">
                   <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
               </div>
 
               <label for="">Выберите категории</label>
               <div class="input cat">
-                <input type="text" class="form-control" id="tokenfield" placeholder="Начните вводить навыки, которыми должен владеть мастер">
-<!--
-                <ul class="categories">
-                  <li><a href="#"><i class="icon-car_engine"></i><b>Диагностика  двигателей</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_look"></i><b>Общая диагностика</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_look"></i><b>Рихтовка</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_tires"></i><b>Шиномантаж</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_chassis"></i><b>Диагностика ходовой</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_painting"></i><b>Покраска</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-welding"></i><b>Сварка</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_balance"></i><b>Балансировка колес</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_chassis"></i><b>Ремонт ходовой</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_engine"></i><b>Ремонт двигателей</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_electronick"></i><b>Электрика</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_tuning"></i><b>Тюниниг</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_sell"></i><b>Предпродажная подготовка</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_wash"></i><b>Химчистка</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_seat"></i><b>Пошив салона</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_seat"></i><b>Реставрация салона</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_lock"></i><b>Медвежатники</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_evacuator"></i><b>Эвакуаторы</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_master"></i><b>Мастер на выезд</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-car_garage"></i><b>Аренда помещения под ремонт</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="icon-toolbox"></i><b>Аренда инструментов</b><i class="fa fa-plus" aria-hidden="true"></i></a></li>
-                </ul>
--->
+                <select name="" id="tokenize" multiple="multiple" class="tokenize-sample">
+                  <option value="1">Диагностика  двигателей</option>
+                  <option value="2">Общая диагностика</option>
+                  <option value="3">Рихтовка</option>
+                  <option value="4">Шиномантаж</option>
+                  <option value="5">Диагностика ходовой</option>
+                  <option value="6">Покраска</option>
+                  <option value="7">Сварка</option>
+                  <option value="8">Балансировка колес</option>
+                  <option value="9">Ремонт ходовой</option>
+                  <option value="10">Ремонт двигателей</option>
+                  <option value="11">Электрика</option>
+                  <option value="12">Тюниниг</option>
+                  <option value="13">Предпродажная подготовка</option>
+                  <option value="14">Химчистка</option>
+                  <option value="15">Пошив салона</option>
+                  <option value="16">Реставрация салона</option>
+                  <option value="17">Медвежатники</option>
+                  <option value="18">Эвакуаторы</option>
+                  <option value="19">Мастер на выезд</option>
+                  <option value="20">Аренда помещения под ремонт</option>
+                  <option value="21">Аренда инструментов</option>
+                </select>
               </div>
               <div class="select">
                 <select name="" id="">
@@ -450,7 +445,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap-tokenfield.min.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="js/jquery.tokenize.js" charset="UTF-8"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/common.js"></script>
   <script type="text/javascript">

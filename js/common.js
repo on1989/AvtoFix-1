@@ -506,30 +506,43 @@ $(document).ready(function () {
   
   // Выпадающий список
   
-  $('#tokenfield').tokenfield({
-            autocomplete: {
-                source: [
+  if ($("#tokenize").length > 0) {
+    var source = [
                   {label: 'Диагностика  двигателей', value: 'Диагностика  двигателей', img_1: "icon-car_engine"}, 
                   {label: 'Общая диагностика', value: 'Общая диагностика', img_1: "icon-car_look"},
                   {label: 'Рихтовка', value: 'Рихтовка', img_1: "icon-car_look"},
-                  {label: 'Шиномантаж', value: 'Шиномантаж', img_1: "icon-car_tires"}
-                ],
-                delay: 100,
-                create: function () {
-                  $(this).data('ui-autocomplete')._renderItem = function (ul, item) {
-                    return $('<li>')
-                            .addClass('ui-menu-item')
-                            .append('<div class="ui-menu-item-wrapper"><i class="'+item.img_1 +'"></i><b>' + item.label + '</b><i class="fa fa-plus" aria-hidden="true"></i></div>')
-                            .appendTo(ul);
-                  };
-                }
-              },
-              showAutocompleteOnFocus: true,
-              typeahead: {
-                name: 'to',
-                header: '<span class="members">users<span>'
-              }
+                  {label: 'Шиномантаж', value: 'Шиномантаж', img_1: "icon-car_tires"},
+                  {label: 'Диагностика ходовой', value: 'Диагностика ходовой', img_1: "icon-car_chassis"},
+                  {label: 'Покраска', value: 'Покраска', img_1: "icon-car_painting"},
+                  {label: 'Сварка', value: 'Сварка', img_1: "icon-welding"},
+                  {label: 'Балансировка колес', value: 'Балансировка колес', img_1: "icon-car_balance"},
+                  {label: 'Ремонт ходовой', value: 'Ремонт ходовой', img_1: "icon-car_chassis"},
+                  {label: 'Ремонт двигателей', value: 'Ремонт двигателей', img_1: "icon-car_engine"},
+                  {label: 'Электрика', value: 'Электрика', img_1: "icon-car_electronick"},
+                  {label: 'Тюниниг', value: 'Тюниниг', img_1: "icon-car_tuning"},
+                  {label: 'Предпродажная подготовка', value: 'Предпродажная подготовка', img_1: "icon-car_sell"},
+                  {label: 'Химчистка', value: 'Химчистка', img_1: "icon-car_wash"},
+                  {label: 'Пошив салона', value: 'Пошив салона', img_1: "icon-car_seat"},
+                  {label: 'Реставрация салона', value: 'Реставрация салона', img_1: "icon-car_seat"},
+                  {label: 'Медвежатники', value: 'Медвежатники', img_1: "icon-car_lock"},
+                  {label: 'Эвакуаторы', value: 'Эвакуаторы', img_1: "icon-car_evacuator"},
+                  {label: 'Мастер на выезд', value: 'Мастер на выезд', img_1: "icon-car_master"},
+                  {label: 'Аренда помещения под ремонт', value: 'Аренда помещения под ремонт', img_1: "icon-car_garage"},
+                  {label: 'Аренда инструментов', value: 'Аренда инструментов', img_1: "icon-toolbox"}];
+          $('#tokenize').tokenize({
+            onDropdownAddItem: function() {
+              $(".Dropdown li").each(function (e) {
+                  $(this).addClass("item").html("<i class=" + source[$(this).attr("data-value")-1]["img_1"] + "></i><b>" + $(this).attr("data-text") + "</b><i class='fa fa-plus' aria-hidden='true'></i>");
+              });
+            }
           });
+  }
+  
+  if ($( "#autocomplete" ).length > 0) {
+    $( "#autocomplete" ).autocomplete({
+        source: [ 'Диагностика  двигателей', 'Общая диагностика', 'Рихтовка', 'Шиномантаж', 'Диагностика ходовой', 'Покраска', 'Сварка', 'Балансировка колес', 'Ремонт ходовой', 'Ремонт двигателей', 'Электрика', 'Тюниниг', 'Предпродажная подготовка', 'Химчистка', 'Пошив салона', 'Реставрация салона', 'Медвежатники', 'Эвакуаторы', 'Мастер на выезд', 'Аренда помещения под ремонт', 'Аренда инструментов' ]
+});
+  }
 
 
 });
