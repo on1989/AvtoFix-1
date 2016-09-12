@@ -628,7 +628,7 @@ section .slider .item {
   padding: 15px 0 0;
 }
 
-section .slider .item .photo {
+section .slider .item .photo{
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -636,7 +636,7 @@ section .slider .item .photo {
   display: table;
 }
 
-section .slider .item .name {
+section .slider .item .name, .why_us .name {
   font-size: 16px;
   color: #000;
   font-weight: 600;
@@ -652,7 +652,7 @@ section .slider .item .by-rating {
   margin: 13px 0 17px;
 }
 
-section .slider .item .text {
+section .slider .item .text, .why_us .text {
   font-size: 12px;
   font-weight: 300;
   color: #000;
@@ -3210,9 +3210,15 @@ footer .subscription input[type="email"] {
   section .order  .description {
     margin-left: 30px;
   }
+  .categories {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  .landing-page .right-block .language a {
+    margin-right: 0px !important;
+  }
   header .search {
     width: 190px;
     margin-left: 15px;
@@ -3360,9 +3366,22 @@ footer .subscription input[type="email"] {
   .ready-to-perform .th:first-child, .ready-to-perform .td:first-child{
     width: 48% !important;
   }
+  .financial-report .tables .tr div.td:nth-of-type(2) {
+    line-height: 1;
+    text-align: left !important;
+    box-sizing: border-box;
+    padding-left: 15px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .landing-page .right-block {
+    width: auto;
+    float:  right;
+  }
+  .landing-page .right-block .login li:first-child a {
+    margin-left: 0;
+  }
   .balance-mobile {
     display: inline-block !important;
   }
@@ -3383,7 +3402,7 @@ footer .subscription input[type="email"] {
     padding-right: 0;
     padding-left: 0;
   }
-  section .categories li.cat-hide {
+  section .cat-hide {
     display: none;
   }
   section .show-more {
@@ -3488,7 +3507,7 @@ footer .subscription input[type="email"] {
     text-align: center;
     margin-top: 0;
   }
-  footer .payment p.text {
+  footer .subscription ~ p.text {
     display: none;
   }
   footer .payment li {
@@ -3503,6 +3522,7 @@ footer .subscription input[type="email"] {
     width: 90%;
     margin: auto;
     display: block;
+    margin-bottom: 40px;
   }
   footer .soc {
     display: table;
@@ -3605,6 +3625,9 @@ footer .subscription input[type="email"] {
 }
 
 @media only screen and (max-width: 530px) {
+  .landing-page .burger-menu:before {
+    margin-right: 0 !important;
+  }
   section .messages h4, section .messages h4 span {
     font-size: 18px !important;
   }
@@ -3612,9 +3635,27 @@ footer .subscription input[type="email"] {
     width: 400px;
     left: -250px
   }
+  .container-star .title {
+    text-align: center;
+  }
+  .container-star .search-user div.col-sm-6.col-xs-6 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .landing-page .right-block {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .landing-page .right-block li{
+    margin: 0 10px;
+  }
+  .landing-page {
+    height: auto !important;
+    padding-bottom: 20px;
+  }
   header .header-block-1 {
     line-height: 35px;
   }
@@ -3703,9 +3744,15 @@ footer .subscription input[type="email"] {
   .container-star .title.left {
     text-align: center;
   }
+  .why_us {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 380px) {
+  .landing-page .right-block li{
+    margin: 0px;
+  }
   section.landing .container-fluid h1.title {
     font-size: 22px;
   }
@@ -4039,6 +4086,21 @@ span.plus {
 }
 #ui-id-1 .ui-menu-item {
   margin: 5px;
+}
+.why_us {
+  background-color: #fcfcfc;
+}
+.why_us .item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.why_us .item .photo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+.why_us .text {
+  text-align: justify;
 }
 /*  end Alina  */
 
