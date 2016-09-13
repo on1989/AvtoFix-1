@@ -3700,6 +3700,8 @@ footer .subscription input[type="email"] {
   .login-modal .modal-content, .register .modal-content {
     margin-top: 0;
     width: 90%;
+    left: 5%;
+    margin-left: 0 !important;
   }
   .modal-content form {
     text-align: center;
