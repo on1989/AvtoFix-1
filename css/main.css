@@ -4261,6 +4261,8 @@ section .messages p.text {
 }
 .login-modal .modal-content {
     max-height: 525px;
+    top: 50%;
+    margin-top: -245px;
   }
 .register .modal-content {
   max-height: 900px;
