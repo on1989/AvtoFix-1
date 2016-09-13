@@ -1,3 +1,7 @@
+html
+{
+    overflow-x:hidden;
+}
 .tariff-plan
 {
     &.banner
@@ -833,7 +837,7 @@
     }
 }
 //END SELECT
-@media only screen and (max-width: 1199px)
+@media only screen and (max-width: 1200px)
 {
     .tariff-plan
     {
@@ -878,7 +882,7 @@
     }
 }
 
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 992px)
 {
     .tariff-plan
     {
@@ -935,9 +939,18 @@
 
             }
         }
+        .search
+        {
+            & + a.button
+            {
+                float: initial;
+                display: table;
+                margin: 0px auto 35px;
+            }
+        }
     }
 }
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
 
 
@@ -1024,6 +1037,14 @@
     .my-profil
     {
 
+        .checkbox-menu
+        {
+            .checkbox
+            {
+                top: 5px !important;
+                margin-right: 0px !important;
+            }
+        }
         &.finance-reports
         {
             .financial-report
@@ -1033,6 +1054,9 @@
                 {
                     top: 0px;
                     margin-right: 20px;
+                    vertical-align: top;
+
+
                 }
                 .tr
                 {
@@ -1080,6 +1104,15 @@
         }
         .financial-report
         {
+            .checkbox
+            {
+
+                &+p
+                {
+                    width: calc(100% - 44px);
+                    vertical-align: top;
+                }
+            }
             .nav
             {
                 li
@@ -1087,6 +1120,17 @@
                     width: 100%;
                 }
             }
+            .tables
+            {
+                .tr
+                {
+                    div.td:nth-of-type(2)
+                    {
+                        padding-left: 53px !important;
+                    }
+                }
+            }
+
         }
         .financial-report-header
         {
@@ -1211,6 +1255,7 @@
             {
                 width: 110px;
                 font-size: 12px;
+                height: 39px;
 
             }
         }
@@ -1220,6 +1265,14 @@
             {
                 width: 130px;
                 font-size: 12px;
+                display: inline-block
+            }
+        }
+        .input-group.date
+        {
+            input.form-control
+            {
+                margin-left: 0;
             }
         }
         .search
@@ -1238,6 +1291,25 @@
 }
 @media only screen and (max-width: 400px)
 {
+    section
+    {
+        .balances
+        {
+            a.button
+            {
+                width: 280px !important;
+            }
+             h2.title
+            {
+                font-size: 38px;
+            }
+            div
+            {
+                top: 35%;
+            }
+
+        }
+    }
     .messages-page
     {
         .button
