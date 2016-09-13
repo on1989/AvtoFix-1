@@ -1,3 +1,7 @@
+html
+{
+    overflow-x:hidden;
+}
 .tariff-plan
 {
     &.banner
@@ -448,7 +452,251 @@
         }
     }
 }
+.my-profil
+{
+    .search
+    {
+        display: inline-block;
+        margin-left: 40px;
+        position: relative;
 
+        &+a.button
+        {
+            width: 165px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 5px;
+            display: inline-block;
+            float: right;
+            background: -webkit-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+            background: -moz-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+            background: -o-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+            background: -ms-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
+            background: linear-gradient(0deg, #3a7cd5 0%, #3498db 100%);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 34px;
+        }
+        input[type="search"]
+        {
+            width: 360px;
+            border: 1px solid #d3d3d3;
+            height: 35px;
+            padding:0 15px;
+        }
+        input[type="submit"]
+        {
+            font-size: 0;
+            background: url(../images/search.png)no-repeat;
+            background-position:  center 11px;
+            background-size: 40%;
+            border: none;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+    }
+    .checkbox-menu
+    {
+        margin: 0 0 0 15px;
+        padding: 0;
+        height: 35px;
+        line-height: 38px;
+        padding: 0 25px 0 10px;
+        width: auto;
+        position: relative;
+        border: 1px solid #cfcfcf;
+        margin-right: 10px;
+        &.active
+        {
+            .checkbox-menu-submenu
+            {
+                display: block;
+            }
+
+            &:after
+            {
+                margin-top: 3px;
+                transform: rotate(-135deg) translateY(-50%);
+            }
+        }
+        &:after
+        {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            top: 50%;
+            right: 9px;
+            margin-top: -1px;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(45deg) translateY(-50%);
+            transition: all .4s ease-in-out;
+            transform-origin: 50% 0;
+        }
+    }
+    .financial-report
+    {
+        .nav
+        {
+            border:1px solid #eaeaea;
+
+            li
+            {
+                display: inline-block;
+                width: calc(100% / 3.05);
+                text-align: center;
+                line-height: 48px;
+                position: relative;
+
+
+                &:before
+                {
+                    content: '';
+                    width: 5px;
+                    height: 2px;
+                    left: 45%;
+                    bottom: 0;
+                    background: #3497da;
+                    visibility: hidden;
+                    position: absolute;
+                    transition: 0.2s ease all;
+                    -moz-transition: 0.2s ease all;
+                    -webkit-transition: 0.2s ease all;
+                }
+                &.active
+                {
+                    a
+                    {
+                        color: #3498db;
+                    }
+
+                    &:before
+                    {
+                        visibility: visible;
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+                a
+                {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .th:nth-of-type(1),
+        .td:nth-of-type(1)
+        {
+            width: 45.7% !important;
+
+            p
+            {
+                display: inline-block;
+            }
+            .checkbox
+            {
+                vertical-align: middle;
+                margin-top: -6px;
+                margin-right: 30px;
+            }
+        }
+        .th:nth-of-type(2),
+        .td:nth-of-type(2)
+        {
+            width: 22.8% !important;
+        }
+        .th:nth-of-type(3),
+        .td:nth-of-type(3)
+        {
+            width: 12.9% !important;
+        }
+    }
+
+    .financial-report-header
+    {
+        height: 60px;
+        line-height: 60px;
+
+        .button.clear
+        {
+            margin-top: 10px;
+        }
+    }
+    .input-group.date
+    {
+        input.form-control
+        {
+            height: 35px;
+            margin-left: 20px;
+        }
+        .input-group-addon
+        {
+            line-height: 35px;
+        }
+    }
+    .custom-select
+    {
+        background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -o-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: -ms-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
+        background: linear-gradient(0deg, #ededed 0%, #eeeeee 100%);
+        border:1px solid #cfcfcf;
+        border-radius: 5px;
+        line-height: 33px;
+        vertical-align: middle;
+
+        .custom-select-trigger
+        {
+            font-size: 12px;
+            color: #000;
+            padding: 0 30px 0 15px;
+
+            &:after
+            {
+                right: 13px;
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+    &.finance-reports
+    {
+        .financial-report
+        {
+            .th:nth-of-type(1)
+            {
+                padding-left: 75px
+            }
+            .th:nth-of-type(1),
+            .td:nth-of-type(1)
+            {
+                width: 23.7% !important;
+            }
+            .th:nth-of-type(2),
+            .td:nth-of-type(2)
+            {
+                width: 39.8% !important;
+            }
+            .td:nth-of-type(4),
+            .th:nth-of-type(4)
+            {
+                text-align: right !important;
+                width: 21.84% !important;
+                padding-right: 20px !important;
+            }
+        }
+    }
+}
 
 //START SELECT
 .select
@@ -589,7 +837,7 @@
     }
 }
 //END SELECT
-@media only screen and (max-width: 1199px)
+@media only screen and (max-width: 1200px)
 {
     .tariff-plan
     {
@@ -602,9 +850,39 @@
             }
         }
     }
+    .my-profil
+    {
+        &.finance-reports
+        {
+            .financial-report
+            {
+                text-align: initial  !important;
+                .th:nth-of-type(1)
+                {
+                    padding-left: 75px !important;
+                }
+            }
+        }
+        .financial-report
+        {
+            .th:nth-of-type(1),
+            .td:nth-of-type(1)
+            {
+                width: 42.7% !important;
+                text-align: left !important;
+                padding-left: 20px !important;
+            }
+            .th:nth-of-type(4),
+            .td:nth-of-type(4)
+            {
+                padding-right: 20px !important;
+                text-align: right !important;
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 992px)
 {
     .tariff-plan
     {
@@ -633,9 +911,46 @@
             width: calc(100% - 330px);
         }
     }
+    .my-profil
+    {
+        .financial-report
+        {
+            .th:nth-of-type(1),
+            .td:nth-of-type(1)
+            {
+                width: 41.7% !important;
+                text-align: left !important;
+                padding-left: 20px !important;
 
+                .checkbox
+                {
+                    margin-right: 10px;
+                }
+            }
+            .tr
+            {
+                .td
+                {
+                    p
+                    {
+                        font-size: 14px !important;
+                    }
+                }
+
+            }
+        }
+        .search
+        {
+            & + a.button
+            {
+                float: initial;
+                display: table;
+                margin: 0px auto 35px;
+            }
+        }
+    }
 }
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 768px)
 {
 
 
@@ -711,6 +1026,163 @@
             }
         }
     }
+    .have-questions
+    {
+        .icon-question
+        {
+            display: none !important;
+        }
+    }
+
+    .my-profil
+    {
+
+        .checkbox-menu
+        {
+            .checkbox
+            {
+                top: 5px !important;
+                margin-right: 0px !important;
+            }
+        }
+        &.finance-reports
+        {
+            .financial-report
+            {
+                text-align: center !important;
+                .checkbox
+                {
+                    top: 0px;
+                    margin-right: 20px;
+                    vertical-align: top;
+
+
+                }
+                .tr
+                {
+                    text-align: left;
+                    padding: 10px 0 0;
+                    line-height: 30px;
+                    .td:nth-of-type(2)
+                    {
+                        padding-left: 15px !important;
+                        width: calc(100% - 155px) !important;
+                    }
+                }
+                .th:nth-of-type(1),
+                .td:nth-of-type(1),
+                .th:nth-of-type(2),
+                .td:nth-of-type(2)
+                {
+                    display: inline-block !important;
+                    text-align: left !important;
+                    margin-bottom: 0;
+                    line-height: 24px;
+                    vertical-align: top;
+                    p
+                    {
+                        display: inline-block;
+                    }
+                }
+                .th:nth-of-type(1)
+                {
+                    width: 150px !important;
+                    padding-left: 30px !important;
+                }
+
+                .tables
+                {
+                    display: none !important;
+                }
+            }
+
+
+        }
+        .search
+        {
+            margin-bottom: 35px;
+        }
+        .financial-report
+        {
+            .checkbox
+            {
+
+                &+p
+                {
+                    width: calc(100% - 44px);
+                    vertical-align: top;
+                }
+            }
+            .nav
+            {
+                li
+                {
+                    width: 100%;
+                }
+            }
+            .tables
+            {
+                .tr
+                {
+                    div.td:nth-of-type(2)
+                    {
+                        padding-left: 53px !important;
+                    }
+                }
+            }
+
+        }
+        .financial-report-header
+        {
+            height: 130px;
+            border-bottom: 1px solid #d9d9d9;
+            .button
+            {
+                float: initial !important;
+                margin: 8px auto 0 !important;
+                display: table;
+            }
+        }
+        .financial-report
+        {
+            .tables
+            {
+                display: block !important;
+
+                .tr:first-child
+                {
+                    display: none;
+                }
+            }
+            .tr
+            {
+                padding:  20px 0;
+                .th,
+                .td
+                {
+                    width: 100% !important;
+                    display: block;
+                    p
+                    {
+                        text-align: left;
+                        font-size: 16px !important;
+                    }
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(3),
+                    &:nth-of-type(4)
+                    {
+                        padding-left: 53px !important;
+                    }
+                }
+                .td
+                {
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
 }
 @media only screen and (max-width: 590px)
 {
@@ -759,9 +1231,85 @@
             }
         }
     }
+    .my-profil
+    {
+
+        &.finance-reports
+        {
+            .financial-report
+            {
+                .td:nth-of-type(2)
+                {
+                    p
+                    {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+        .input-group.date
+        {
+
+
+            input.form-control
+            {
+                width: 110px;
+                font-size: 12px;
+                height: 39px;
+
+            }
+        }
+        .financial-report-header
+        {
+            .button.clear
+            {
+                width: 130px;
+                font-size: 12px;
+                display: inline-block
+            }
+        }
+        .input-group.date
+        {
+            input.form-control
+            {
+                margin-left: 0;
+            }
+        }
+        .search
+        {
+            margin-left: 0;
+            width: 100%;
+
+            input[type="search"]
+            {
+                width: 90%;
+                font-size: 12px;
+            }
+        }
+    }
+
 }
 @media only screen and (max-width: 400px)
 {
+    section
+    {
+        .balances
+        {
+            a.button
+            {
+                width: 280px !important;
+            }
+             h2.title
+            {
+                font-size: 38px;
+            }
+            div
+            {
+                top: 35%;
+            }
+
+        }
+    }
     .messages-page
     {
         .button
@@ -795,5 +1343,29 @@
 
         }
     }
+    section
+    {
+        .have-questions
+        {
+            .button
+            {
+                width: 280px !important;
+                font-size: 16px !important;
+            }
+        }
+    }
 
+}
+@media only screen and (max-width: 380px)
+{
+    .messages-page
+    {
+        .financial-report-header
+        {
+            .button.clear
+            {
+                float: left;
+            }
+        }
+    }
 }

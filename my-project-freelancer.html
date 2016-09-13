@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project freelancer</title>
+  <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icon.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dropzone.css" />
+  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--START HEADER-->
+  <header>
+    <div class="header-block-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-sm-5 xs-hide">
+            <!--лого-->
+            <div class="logo">
+              <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <!--поле поиска-->
+            <div class="search">
+              <input type="search" placeholder="Поиск мастера">
+              <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12 mobile-header">
+            <!--мобильное меню-->
+            <i class="fa fa-bars mobile-menu" aria-hidden="true"></i>
+            <!--логотип для мобильного-->
+            <div class="logo logo-mobile">
+              <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="right-block">
+              <!-- выбор языков -->
+              <ul class="language">
+                <li>
+                  <a href="#">Рус<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Рус</a></li>
+                    <li><a href="#">En</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!--просмотр баланса-->
+              <ul class="balance">
+                <li>
+                  <a href="#">Баланс <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul class="sub-menu">
+                    <li>
+                      <p class="header-sub-menu">Балансы <span>10 000 грн.</span><i class="fa fa-times" aria-hidden="true"></i></p>
+                      <ul>
+                        <li class="active"><a href="#">Финансы</a></li>
+                        <li><a href="#">История транзакций</a></li>
+                        <li><a href="#">Вывод средств</a></li>
+                        <li><a href="#">Пополнить счёт</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!--Баланс для мобильной версии (кошелек)-->
+              <ul class="balance-mobile">
+                <li>
+                  <a href="#">
+                    <i class="icon-wallet1" aria-hidden="true"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <p class="header-sub-menu">Балансы <span>10 000 грн.</span><i class="fa fa-times" aria-hidden="true"></i></p>
+                      <ul>
+                        <li class="active"><a href="#">Финансы</a></li>
+                        <li><a href="#">История транзакций</a></li>
+                        <li><a href="#">Вывод средств</a></li>
+                        <li><a href="#">Пополнить счёт</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!--сообщения-->
+              <ul class="messages">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                    <span>2</span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li>
+                      <p class="header-sub-menu">Сообщения<i class="fa fa-times" aria-hidden="true"></i></p>
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <img src="images/photo-2.png" alt="">
+                          </a>
+                          <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <img src="images/photo-2.png" alt="">
+                          </a>
+                          <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф заинтересовался вашим проф</p>
+												</a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <img src="images/photo-2.png" alt="">
+                          </a>
+                          <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                        </li>
+
+                        <li>
+                          <a href="#">
+                            <img src="images/photo-2.png" alt="">
+                          </a>
+                          <a href="#">
+													Андрей Андреев
+													<p class="text-hidden">Добрый вечер, заинтересовался вашим проф</p>
+												</a>
+                        </li>
+                      </ul>
+                      <a href="#" class="all-messages">Смотреть все сообщения</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- предупреждения (колокольчик)-->
+              <ul class="notify">
+                <li>
+                  <a href="#">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                    <span>1</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- пользователь-->
+              <ul class="user">
+                <li>
+                  <a href="#">
+                    <img src="images/photo-2.png" alt="">
+                    <i class="fa fa-angle-down xs-hide" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-block-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <!--меню-->
+            <ul class="menu">
+              <li><a href="#">Мои проекты</a></li>
+              <li><a href="#">Искать работу</a></li>
+              <li><a href="#">Найти мастера</a></li>
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Тарифные планы</a></li>
+            </ul>
+            <!--местоположение-->
+            <a href="#" class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Моё местоположение</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--END HEADER-->
+
+  <!--START CONTENT-->
+
+  <section ng-app="app" ng-controller="RatingController as rating" class="container-star">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="my-profil">
+            <h2 class="title">Мои проекты</h2>
+            <div class="search">
+              <input type="search" placeholder="Поиск заказа по названию/заказчику">
+              <input type="submit">
+            </div>
+            <div class="financial-report">
+                 <ul class="nav nav-tabs">
+                  <li><a href="#in-waiting" data-toggle="tab">В ожидании</a></li>
+                  <li class="active"><a href="#fulfill-orders" data-toggle="tab">Выполняемые заказы <span>(6)</span></a></li>
+                  <li><a href="#order-execution" data-toggle="tab">Выполнение заказа</a></li>
+                </ul>
+                <div class="financial-report-header">
+                <div class="checkbox-menu">
+                    <div class="checkbox">
+                        <p>
+                            <input id="test2" type="checkbox">
+                            <label for="test2"></label>
+                        </p>
+                    </div>
+                    <ul class="checkbox-menu-submenu">
+                        <li class="all"><a href="#">Все</a></li>
+                        <li class="read"><a href="#">Прочитанные</a></li>
+                        <li class="not-read"><a href="#">Непрочитанные</a></li>
+                    </ul>
+                </div>
+                <div class="select">
+                  <select name="sources" id="sources" class="custom-select sources" placeholder="Действия">
+                    <option value="profile">Действия1</option>
+                    <option value="word">Действия2</option>
+                    <option value="hashtag">Действия3</option>
+                  </select>
+                </div>
+               <div class="input-group date" id="datetimepicker">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </span>
+				</div>
+
+                <a href="#" class="button clear">Очистить отчётность</a>
+              </div>
+
+
+            <div class="tab-content">
+                <div class="tab-pane " id="in-waiting">
+
+                </div>
+                <div class="tab-pane active" id="fulfill-orders">
+                       <div class="tables">
+                <div class="tr">
+
+                  <div class="th">
+                    <h5>Название</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Заказчик</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Выполнить до</h5>
+                  </div>
+                  <div class="th">
+                    <h5>Ставка</h5>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test3" type="checkbox">
+                        <label for="test3"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test4" type="checkbox">
+                        <label for="test4"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test5" type="checkbox">
+                        <label for="test5"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test6" type="checkbox">
+                        <label for="test6"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test7" type="checkbox">
+                        <label for="test7"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+                <div class="tr">
+                  <div class="td">
+                    <div class="checkbox">
+                      <p>
+                        <input id="test8" type="checkbox">
+                        <label for="test8"></label>
+                      </p>
+                    </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
+                  </div>
+                  <div class="td">
+                    <p>20.08.16</p>
+                  </div>
+                  <div class="td">
+                    <p><span>10 000 грн.</span></p>
+                  </div>
+                </div>
+
+
+
+
+            </div>
+
+                </div>
+                <div class="tab-pane" id="order-execution">
+
+
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="sline">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <div class="have-questions">
+            <h2 class="title center">Есть вопросы?</h2>
+            <a href="#" class="button" data-toggle="modal" data-target=".contact-admin">Связаться с администратором</a>
+            <i class="icon-question"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--END CONTENT-->
+
+  <!--START FOOTER-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="logo"><img src="images/logo-footer.png" alt=""></div>
+          <ul class="soc">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#">Мои проекты</a></li>
+            <li><a href="#">Искать работу</a></li>
+            <li><a href="#">Найти мастера</a></li>
+            <li><a href="#">Помощь</a></li>
+            <li><a href="#">Тарифные планы</a></li>
+          </ul>
+          <div class="payment">
+            <h5>Доступные способы оплаты</h5>
+            <ul>
+              <li><i class="icon-privat"></i>Приват 24</li>
+              <li><i class="icon-yandex-monery"></i>ЯндексДеньги</li>
+              <li><i class="fa fa-usd" aria-hidden="true"></i>LiqPay</li>
+              <li><i class="fa fa-cc-visa" aria-hidden="true"></i>Visa</li>
+              <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i>Master card</li>
+            </ul>
+          </div>
+          <div class="subscription">
+            <h5>Подпишитесь на рассылку</h5>
+            <input type="email" placeholder="Введите e-mail">
+            <input type="submit" value="ОТПРАВИТЬ">
+          </div>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--END FOOTER-->
+  <!--START MODAL-->
+  <div class="modal fade contact-admin" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Связаться с администратором</h4>
+          <i class="fa fa-times close" aria-hidden="true" data-dismiss="modal" aria-hidden="true"></i>
+        </div>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя">
+          <input type="email" placeholder="Электронная почта">
+          <textarea name="#" id="#" placeholder="Опишите ваш вопрос"></textarea>
+          <input type="submit" value="Связаться">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--END MODAL-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/dropzone.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/bootstrap-datepicker.ru.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.js"></script>
+ <script type="text/javascript">
+	$('#datetimepicker').datepicker({
+    keyboardNavigation: false,
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true,
+	language: "ru"
+});
+</script>
+
+  <script>
+$(document).ready(function(){
+ //START CUSTOM SELECT
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function(event) {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+//END CUSTOM SELECT
+
+
+$('.checkbox-menu').each(function(){
+    $(this).click(function(){
+        $(this).toggleClass('active');
+    });
+});
+});
+
+
+</script>
+<script>
+var checkedInput = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedInput) {
+			$(this).addClass('checked');
+            $(this).closest('.messages-header-bottom ').next().find('input').addClass('checked');
+			checkedInput = 0;
+		} else {
+			$(this).removeClass('checked');
+             $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+			checkedInput = 1;
+		}
+	});
+});
+$(".messages-content .checkbox input").each(function() {
+	$(this).click(function(){
+        $(this).toggleClass('checked')
+    })
+});
+
+
+$(".checkbox-menu-submenu .all").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('input').addClass('checked');
+            $(this).closest('.checkbox-menu').find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+            $(this).closest('.checkbox-menu').find('input').removeClass('checked');
+			checkedMenu = 1;
+		}
+	});
+});
+
+
+$(".checkbox-menu-submenu .read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+
+
+$(".checkbox-menu-submenu .not-read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+var checkedMenu = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.financial-report-header').next().find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.financial-report-header').next().find('input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+</script>
+</body>
+
+</html>
