@@ -784,7 +784,7 @@ section .order-head h4 {
   font-weight: 600;
 }
 
-section .messages h4 span,
+section .messages .message-title span,
 section .order-head h4 span {
   float: right;
   font-size: 24px;
@@ -3131,26 +3131,22 @@ footer .subscription input[type="email"] {
   section .categories li:nth-of-type(4n) b {
     padding-right: 0;
   }
-  section .messages {
-    position: relative;
-  }
 
-  section .messages ul {
-    position: absolute;
-    top: 50px;
-    left: 40px;
+  section .messages ul.md-show {
+    display: block !important;
+    margin-top: 15px;
+  }
+  section .messages ul.md-hidden {
+    display: none;
   }
   section .messages ul li i::before {
-    margin-left: 5px;
-  }
-  section .messages p.text {
-    padding-top: 30px;
+    margin-left: 0;
   }
   section .messages .user {
     width: 50%;
   }
   section .messages p.status {
-    margin-top: 4px;
+    margin-top: 0 px;
   }
   section ul.advantage li {
     width: calc(100% / 4.06);
@@ -3555,10 +3551,6 @@ footer .subscription input[type="email"] {
     line-height: 37px;
     font-size: 20px;
   }
-  /*  Alina*/
-  section .messages p.text {
-    width: 100%;
-  }
   section .messages:last-child {
     margin-bottom: 20px;
   }
@@ -3675,7 +3667,7 @@ footer .subscription input[type="email"] {
   }
   .landing-page {
     height: auto !important;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   header .header-block-1 {
     line-height: 35px;
@@ -3724,32 +3716,28 @@ footer .subscription input[type="email"] {
   }
   .see-resalts .messages {
     padding: 15px !important;
+    position: relative;
   }
-  .see-resalts .messages h4 {
-    font-size: 24px;
-  }
-  .see-resalts .messages h4 span{
-    float: none;
-    display: block;
-  }
-  .see-resalts .messages ul{
-    top: 80px;
-    left: 15px !important;
-  }
-   .see-resalts .messages p.status, .see-resalts .messages h4 span{
+  .see-resalts .messages .price, .see-resalts .messages .status {
     position: absolute;
-    top: 45px;
+    top: 0;
+    float: none;
+  }
+  .see-resalts .messages .status {
     right: 15px;
   }
-  .see-resalts .messages p.status {
-    top: 35px;
-  }
-  .see-resalts .messages h4 span {
+  .see-resalts .messages .price {
+    top: 15px;
     left: 15px;
+    text-align: left !important;
   }
-  .see-resalts .messages p.text {
-    padding-top: 80px;
+  .see-resalts .messages .message-title {
+    margin-top: 40px;
   }
+  .see-resalts .messages .message-title h4{
+    width: 100%;
+  }
+  
   .my-profil .buttons li{
     margin-left: auto !important;
   }
@@ -3830,15 +3818,6 @@ footer .subscription input[type="email"] {
     display: block !important;
   }
   
-  .see-resalts .messages ul{
-    top: 90px;
-  }
-   .see-resalts .messages p.status{
-    top: 40px;
-  }
-  .see-resalts .messages p.text {
-    padding-top: 100px;
-  }
   .freelancer-search input[type="reset"] + input {
     margin-left: 0 !important;
     display: block !important;
@@ -4140,6 +4119,23 @@ span.plus {
 header.landing-page .mob-menu-landing {
     display: none;
   }
+section .messages ul.md-show {
+    display: none;
+  }
+section .messages .message-title {
+  overflow: hidden;
+}
+section .messages .message-title h4 {
+  float: left;
+  width: calc( 100% - 150px)
+}
+section .messages .message-title .price {
+  min-width: 150px;
+  text-align: right;
+}
+section .messages p.text {
+  width: 100%;
+}
 /*  end Alina  */
 
 
