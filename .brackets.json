@@ -13,8 +13,10 @@
             "linting.collapsed": false,
             "brackets-minimap.width": 84,
             "eqFTP.projectsPaths": [
+                "D:/ftp",
                 "D:/ftp"
-            ]
+            ],
+            "brackets-git.gitPath": "C:\\Program Files\\Git\\cmd\\git.exe"
         }
     }
 }

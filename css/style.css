@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .tariff-plan.banner {
   position: relative;
   margin-bottom: 20px;
@@ -955,7 +959,7 @@ select {
   background: #f9f9f9;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1200px) {
   .tariff-plan
 .account-items
 .account-item {
@@ -990,7 +994,7 @@ select {
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   .tariff-plan
 .account-items
 .account-item {
@@ -1036,9 +1040,15 @@ select {
 p {
     font-size: 14px !important;
   }
+  .my-profil
+.search + a.button {
+    float: initial;
+    display: table;
+    margin: 0px auto 35px;
+  }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .tariff-plan.banner
 img {
     width: auto;
@@ -1101,6 +1111,12 @@ h3.title + .button {
 .icon-question {
     display: none !important;
   }
+  .my-profil
+.checkbox-menu
+.checkbox {
+    top: 5px !important;
+    margin-right: 0px !important;
+  }
   .my-profil.finance-reports
 .financial-report {
     text-align: center !important;
@@ -1110,6 +1126,7 @@ h3.title + .button {
 .checkbox {
     top: 0px;
     margin-right: 20px;
+    vertical-align: top;
   }
   .my-profil.finance-reports
 .financial-report
@@ -1175,9 +1192,22 @@ p {
   }
   .my-profil
 .financial-report
+.checkbox + p {
+    width: calc(100% - 44px);
+    vertical-align: top;
+  }
+  .my-profil
+.financial-report
 .nav
 li {
     width: 100%;
+  }
+  .my-profil
+.financial-report
+.tables
+.tr
+div.td:nth-of-type(2) {
+    padding-left: 53px !important;
   }
   .my-profil
 .financial-report-header {
@@ -1299,12 +1329,19 @@ p {
 input.form-control {
     width: 110px;
     font-size: 12px;
+    height: 39px;
   }
   .my-profil
 .financial-report-header
 .button.clear {
     width: 130px;
     font-size: 12px;
+    display: inline-block;
+  }
+  .my-profil
+.input-group.date
+input.form-control {
+    margin-left: 0;
   }
   .my-profil
 .search {
@@ -1320,6 +1357,21 @@ input[type="search"] {
 }
 
 @media only screen and (max-width: 400px) {
+  section
+.balances
+a.button {
+    width: 280px !important;
+  }
+  section
+.balances
+h2.title {
+    font-size: 38px;
+  }
+  section
+.balances
+div {
+    top: 35%;
+  }
   .messages-page
 .button {
     width: 123px;
