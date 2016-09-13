@@ -244,35 +244,6 @@ $(document).ready(function () {
 // END HOME PAGE
 //START FREELANCER SEARCH
 
-//START INPUT CATEGORIES
-//var categoriesMenu = 1
-//$(".cat input").each(function () {
-//  $(this).click(function () {
-//    if (categoriesMenu) {
-//      $(".categories").slideDown();
-//      categoriesMenu = 0;
-//    } else {
-//      $(".categories").slideUp();
-//      categoriesMenu = 1;
-//    }
-//  });
-//});
-//END INPUT CATEGORIES
-
-//START CHECKBOX MENU
-//var checkBoxMenu = 1;
-//  $(".checkbox-menu input").click(function () {
-//    
-//    if (checkBoxMenu) {
-//      $(".checkbox input").addClass('checked');
-//      checkBoxMenu = 0;
-//    } else {
-//      $(".checkbox input").removeClass('checked');
-//      checkBoxMenu = 1;
-//    }
-//    
-//  });
-
 $("#test1").click(function () {
     $(this).toggleClass('checked');
   if($(this).hasClass('checked')){
