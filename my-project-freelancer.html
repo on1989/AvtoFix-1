@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Finance Reports</title>
+  <title>My Project freelancer</title>
   <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/dropzone.css" />
   <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -199,86 +200,66 @@
           <div class="my-profil">
             <h2 class="title">Мои проекты</h2>
             <div class="search">
-              <input type="search">
+              <input type="search" placeholder="Поиск заказа по названию/заказчику">
               <input type="submit">
             </div>
             <div class="financial-report">
-              <div class="financial-report-header">
-                <div class="checkbox-menu">
-                  <div class="checkbox">
-                    <p>
-                      <input id="test1" type="checkbox">
-                      <label for="test1"></label>
-                    </p>
-                  </div>
-                  <ul class="checkbox-subMenu">
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                  </ul>
-                </div>
-                <ul class="act">
-                  <li>
-                    <a href="#" class="button">Действие	</a>
-                    <ul class="subMenu">
-                      <li><a href="#">Действие</a></li>
-                      <li><a href="#">Действие</a></li>
-                      <li><a href="#">Действие</a></li>
-                      <li><a href="#">Действие</a></li>
-                    </ul>
-                  </li>
+                 <ul class="nav nav-tabs">
+                  <li><a href="#in-waiting" data-toggle="tab">В ожидании</a></li>
+                  <li class="active"><a href="#fulfill-orders" data-toggle="tab">Выполняемые заказы <span>(6)</span></a></li>
+                  <li><a href="#order-execution" data-toggle="tab">Выполнение заказа</a></li>
                 </ul>
-                <div class="input-group date">
-                  <input type="text" class="form-control">
-                  <span class="input-group-addon">
-							<i class="fa fa-calendar" aria-hidden="true"></i>
-						</span>
+                <div class="financial-report-header">
+                <div class="checkbox-menu">
+                    <div class="checkbox">
+                        <p>
+                            <input id="test2" type="checkbox">
+                            <label for="test2"></label>
+                        </p>
+                    </div>
+                    <ul class="checkbox-menu-submenu">
+                        <li class="all"><a href="#">Все</a></li>
+                        <li class="read"><a href="#">Прочитанные</a></li>
+                        <li class="not-read"><a href="#">Непрочитанные</a></li>
+                    </ul>
                 </div>
+                <div class="select">
+                  <select name="sources" id="sources" class="custom-select sources" placeholder="Действия">
+                    <option value="profile">Действия1</option>
+                    <option value="word">Действия2</option>
+                    <option value="hashtag">Действия3</option>
+                  </select>
+                </div>
+               <div class="input-group date" id="datetimepicker">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </span>
+				</div>
 
                 <a href="#" class="button clear">Очистить отчётность</a>
               </div>
 
 
+            <div class="tab-content">
+                <div class="tab-pane " id="in-waiting">
 
-              <div class="tables">
-                <div class="tr">
-                  <div class="th">
-
-                  </div>
-                  <div class="th">
-                    <h5>Дата</h5>
-                  </div>
-                  <div class="th">
-                    <h5>Операция</h5>
-                  </div>
-                  <div class="th">
-                    <h5>Сумма</h5>
-                  </div>
-                  <div class="th">
-                    <h5>Остаток</h5>
-                  </div>
                 </div>
-
+                <div class="tab-pane active" id="fulfill-orders">
+                       <div class="tables">
                 <div class="tr">
-                  <div class="td">
-                    <div class="checkbox">
-                      <p>
-                        <input id="test2" type="checkbox">
-                        <label for="test2"></label>
-                      </p>
-                    </div>
+
+                  <div class="th">
+                    <h5>Название</h5>
                   </div>
-                  <div class="td">
-                    <p>20.08.16</p>
+                  <div class="th">
+                    <h5>Заказчик</h5>
                   </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
+                  <div class="th">
+                    <h5>Выполнить до</h5>
                   </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
-                    <p><span>10 000 грн.</span></p>
+                  <div class="th">
+                    <h5>Ставка</h5>
                   </div>
                 </div>
 
@@ -290,15 +271,13 @@
                         <label for="test3"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
                   </div>
                   <div class="td">
                     <p><span>10 000 грн.</span></p>
@@ -313,20 +292,19 @@
                         <label for="test4"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
                   </div>
                   <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
                     <p><span>10 000 грн.</span></p>
                   </div>
                 </div>
+
 
                 <div class="tr">
                   <div class="td">
@@ -336,20 +314,20 @@
                         <label for="test5"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
                   </div>
                   <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
                     <p><span>10 000 грн.</span></p>
                   </div>
                 </div>
+
+
 
                 <div class="tr">
                   <div class="td">
@@ -359,20 +337,20 @@
                         <label for="test6"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
                   </div>
                   <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
                     <p><span>10 000 грн.</span></p>
                   </div>
                 </div>
+
+
 
                 <div class="tr">
                   <div class="td">
@@ -382,20 +360,19 @@
                         <label for="test7"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
                   </div>
                   <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
                     <p><span>10 000 грн.</span></p>
                   </div>
                 </div>
+
 
                 <div class="tr">
                   <div class="td">
@@ -405,15 +382,13 @@
                         <label for="test8"></label>
                       </p>
                     </div>
+                    <p>Ремонта двигателя автомобиля</p>
+                  </div>
+                  <div class="td">
+                    <a href="#"><p>Константин Плахутин</p></a>
                   </div>
                   <div class="td">
                     <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
                   </div>
                   <div class="td">
                     <p><span>10 000 грн.</span></p>
@@ -421,99 +396,16 @@
                 </div>
 
 
-                <div class="tr">
-                  <div class="td">
-                    <div class="checkbox">
-                      <p>
-                        <input id="test9" type="checkbox">
-                        <label for="test9"></label>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
-                    <p><span>10 000 грн.</span></p>
-                  </div>
-                </div>
 
-                <div class="tr">
 
-                  <div class="td">
-                    <div class="checkbox">
-                      <p>
-                        <input id="test10" type="checkbox">
-                        <label for="test10"></label>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
-                    <p><span>10 000 грн.</span></p>
-                  </div>
-                </div>
+            </div>
 
-                <div class="tr">
-                  <div class="td">
-                    <div class="checkbox">
-                      <p>
-                        <input id="test11" type="checkbox">
-                        <label for="test11"></label>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
-                    <p><span>10 000 грн.</span></p>
-                  </div>
                 </div>
+                <div class="tab-pane" id="order-execution">
 
-                <div class="tr">
-                  <div class="td">
-                    <div class="checkbox">
-                      <p>
-                        <input id="test12" type="checkbox">
-                        <label for="test12"></label>
-                      </p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <p>20.08.16</p>
-                  </div>
-                  <div class="td">
-                    <p>Оплата ремонта двигателя автомобиля</p>
-                  </div>
-                  <div class="td">
-                    <p>5000 грн.</p>
-                  </div>
-                  <div class="td">
-                    <p><span>10 000 грн.</span></p>
-                  </div>
+
                 </div>
-              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -603,17 +495,150 @@
   <script src="js/bootstrap-datepicker.ru.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/common.js"></script>
-  <script type="text/javascript">
-    $('.input-group-addon').datepicker({
-      keyboardNavigation: false,
-      forceParse: false,
-      autoclose: true,
-      todayHighlight: true,
-      toggleActive: true,
-      language: "ru"
-    });
-  </script>
+ <script type="text/javascript">
+	$('#datetimepicker').datepicker({
+    keyboardNavigation: false,
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true,
+	language: "ru"
+});
+</script>
 
+  <script>
+$(document).ready(function(){
+ //START CUSTOM SELECT
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function(event) {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+//END CUSTOM SELECT
+
+
+$('.checkbox-menu').each(function(){
+    $(this).click(function(){
+        $(this).toggleClass('active');
+    });
+});
+});
+
+
+</script>
+<script>
+var checkedInput = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedInput) {
+			$(this).addClass('checked');
+            $(this).closest('.messages-header-bottom ').next().find('input').addClass('checked');
+			checkedInput = 0;
+		} else {
+			$(this).removeClass('checked');
+             $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+			checkedInput = 1;
+		}
+	});
+});
+$(".messages-content .checkbox input").each(function() {
+	$(this).click(function(){
+        $(this).toggleClass('checked')
+    })
+});
+
+
+$(".checkbox-menu-submenu .all").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('input').addClass('checked');
+            $(this).closest('.checkbox-menu').find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+            $(this).closest('.checkbox-menu').find('input').removeClass('checked');
+			checkedMenu = 1;
+		}
+	});
+});
+
+
+$(".checkbox-menu-submenu .read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+
+
+$(".checkbox-menu-submenu .not-read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+var checkedMenu = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.financial-report-header').next().find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.financial-report-header').next().find('input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+</script>
 </body>
 
 </html>

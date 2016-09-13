@@ -10,7 +10,7 @@
                 "sourceComments": false,
                 "outputStyle": "expanded"
             },
-            "linting.collapsed": true,
+            "linting.collapsed": false,
             "brackets-minimap.width": 84,
             "eqFTP.projectsPaths": [
                 "D:/ftp"

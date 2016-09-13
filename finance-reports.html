@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/dropzone.css" />
     <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.standalone.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -194,29 +195,34 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="my-profil">
+				<div class="my-profil finance-reports">
 					<h2 class="title">Отчёт по финансам</h2>
+					<div class="search">
+                        <input type="search" placeholder="Поиск заказа по названию/заказчику">
+                        <input type="submit">
+                    </div>
 					<div class="financial-report">
 					<div class="financial-report-header">
 					<div class="checkbox-menu">
-						<div class="checkbox">
-							<p>
-								<input id="test1" type="checkbox">
-								<label for="test1"></label>
-							</p>
-						</div>
-					</div>
-					<ul class="act">
-						<li>
-							<a href="#" class="button">Действие	</a>
-							<ul class="subMenu">
-								<li><a href="#">Действие</a></li>
-								<li><a href="#">Действие</a></li>
-								<li><a href="#">Действие</a></li>
-								<li><a href="#">Действие</a></li>
-							</ul>
-						</li>
-					</ul>
+                    <div class="checkbox">
+                        <p>
+                            <input id="test2" type="checkbox">
+                            <label for="test2"></label>
+                        </p>
+                    </div>
+                    <ul class="checkbox-menu-submenu">
+                        <li class="all"><a href="#">Все</a></li>
+                        <li class="read"><a href="#">Прочитанные</a></li>
+                        <li class="not-read"><a href="#">Непрочитанные</a></li>
+                    </ul>
+                </div>
+                <div class="select">
+                  <select name="sources" id="sources" class="custom-select sources" placeholder="Действия">
+                    <option value="profile">Действия1</option>
+                    <option value="word">Действия2</option>
+                    <option value="hashtag">Действия3</option>
+                  </select>
+                </div>
 					<div class="input-group date" id="datetimepicker">
 						<input type="text" class="form-control">
 						<span class="input-group-addon">
@@ -233,9 +239,7 @@
                       
                       <!--шапка таблицы-->
 						<div class="tr">
-							<div class="th">
-								
-							</div>
+
 							<div class="th">
 								<h5>Дата</h5>
 							</div>
@@ -258,10 +262,9 @@
 										<label for="test2"></label>
 									</p>
 								</div>
-							</div>
-							<div class="td">
 								<p>20.08.16</p>
 							</div>
+
 							<div class="td">
 								<p>Оплата ремонта двигателя автомобиля</p>
 							</div>
@@ -272,19 +275,20 @@
 								<p><span>10 000 грн.</span></p>
 							</div>
 						</div>
+
+
 						
 						<div class="tr">
 							<div class="td">
 								<div class="checkbox">
 									<p>
-										<input id="test3" type="checkbox">
-										<label for="test3"></label>
+										<input id="test2" type="checkbox">
+										<label for="test2"></label>
 									</p>
 								</div>
-							</div>
-							<div class="td">
 								<p>20.08.16</p>
 							</div>
+
 							<div class="td">
 								<p>Оплата ремонта двигателя автомобиля</p>
 							</div>
@@ -295,19 +299,45 @@
 								<p><span>10 000 грн.</span></p>
 							</div>
 						</div>
+
+
+						
+                        <div class="tr">
+							<div class="td">
+								<div class="checkbox">
+									<p>
+										<input id="test2" type="checkbox">
+										<label for="test2"></label>
+									</p>
+								</div>
+								<p>20.08.16</p>
+							</div>
+
+							<div class="td">
+								<p>Оплата ремонта двигателя автомобиля</p>
+							</div>
+							<div class="td">
+								<p>5000 грн.</p>
+							</div>
+							<div class="td">
+								<p><span>10 000 грн.</span></p>
+							</div>
+						</div>
+						
+
+
 						
 						<div class="tr">
 							<div class="td">
 								<div class="checkbox">
 									<p>
-										<input id="test4" type="checkbox">
-										<label for="test4"></label>
+										<input id="test2" type="checkbox">
+										<label for="test2"></label>
 									</p>
 								</div>
-							</div>
-							<div class="td">
 								<p>20.08.16</p>
 							</div>
+
 							<div class="td">
 								<p>Оплата ремонта двигателя автомобиля</p>
 							</div>
@@ -319,18 +349,18 @@
 							</div>
 						</div>
 						
+
 						<div class="tr">
 							<div class="td">
 								<div class="checkbox">
 									<p>
-										<input id="test5" type="checkbox">
-										<label for="test5"></label>
+										<input id="test2" type="checkbox">
+										<label for="test2"></label>
 									</p>
 								</div>
-							</div>
-							<div class="td">
 								<p>20.08.16</p>
 							</div>
+
 							<div class="td">
 								<p>Оплата ремонта двигателя автомобиля</p>
 							</div>
@@ -341,170 +371,636 @@
 								<p><span>10 000 грн.</span></p>
 							</div>
 						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test6" type="checkbox">
-										<label for="test6"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test7" type="checkbox">
-										<label for="test7"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test8" type="checkbox">
-										<label for="test8"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test9" type="checkbox">
-										<label for="test9"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-						
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test10" type="checkbox">
-										<label for="test10"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test11" type="checkbox">
-										<label for="test11"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-						
-						<div class="tr">
-							<div class="td">
-								<div class="checkbox">
-									<p>
-										<input id="test12" type="checkbox">
-										<label for="test12"></label>
-									</p>
-								</div>
-							</div>
-							<div class="td">
-								<p>20.08.16</p>
-							</div>
-							<div class="td">
-								<p>Оплата ремонта двигателя автомобиля</p>
-							</div>
-							<div class="td">
-								<p>5000 грн.</p>
-							</div>
-							<div class="td">
-								<p><span>10 000 грн.</span></p>
-							</div>
-						</div>
-					</div>	
+
+					</div>
+
+					<div class="tables-mobile">
+                        <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+
+
+
+
+
+					    <div class="tr-mobile">
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Дата</h5>
+                                </div>
+
+                                <div class="td">
+                                    <div class="checkbox">
+                                        <p>
+                                            <input id="test2" type="checkbox">
+                                            <label for="test2"></label>
+                                        </p>
+                                    </div>
+                                    <p>20.08.16</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Операция</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>Оплата ремонта двигателя автомобиля</p>
+                                </div>
+                            </div>
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Сумма</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>5000 грн.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tr">
+
+                                <div class="th">
+                                    <h5>Остаток</h5>
+                                </div>
+
+                                <div class="td">
+                                    <p>10000 грн.</p>
+                                </div>
+                            </div>
+					    </div>
+
+					</div>
 					</div>
 				</div>
 			</div>
@@ -603,6 +1099,62 @@
     todayHighlight: true,
     toggleActive: true,
 	language: "ru"
+});
+
+
+     //START CUSTOM SELECT
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function(event) {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+//END CUSTOM SELECT
+
+
+
+    var checkedMenu = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.financial-report-header').next().find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.financial-report-header').next().find('input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
 });
 </script>
 
