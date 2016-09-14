@@ -3559,6 +3559,7 @@ footer .subscription input[type="email"] {
   }
   header.landing-page .mob-menu-landing a {
     color: #fff;
+    display: block;
   }
   header .menu li:hover a,
   header.landing-page .mob-menu-landing li:hover a {
