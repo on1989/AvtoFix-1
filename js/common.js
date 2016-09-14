@@ -72,7 +72,7 @@
 })();
 //END STAR 
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
 
 
@@ -237,13 +237,14 @@ $(document).ready(function () {
     }
   });
 
-});
+//});
 
 // END TEXT HIDE
 
 // END HOME PAGE
 //START FREELANCER SEARCH
 
+// CHECKBOX MENU
 $("#test1").click(function () {
     $(this).toggleClass('checked');
   if($(this).hasClass('checked')){
@@ -254,8 +255,138 @@ $("#test1").click(function () {
 $(".checkbox input").click(function () {
   $(this).toggleClass('checked');
 });
-
 //END CHECKBOX MENU
+
+//START CUSTOM SELECT
+$(".custom-select").each(function() {
+  var classes = $(this).attr("class"),
+      id      = $(this).attr("id"),
+      name    = $(this).attr("name");
+  var template =  '<div class="' + classes + '">';
+      template += '<span class="custom-select-trigger">' + $(this).attr("placeholder") + '</span>';
+      template += '<div class="custom-options">';
+      $(this).find("option").each(function() {
+        template += '<span class="custom-option ' + $(this).attr("class") + '" data-value="' + $(this).attr("value") + '">' + $(this).html() + '</span>';
+      });
+  template += '</div></div>';
+
+  $(this).wrap('<div class="custom-select-wrapper"></div>');
+  $(this).hide();
+  $(this).after(template);
+});
+$(".custom-option:first-of-type").hover(function() {
+  $(this).parents(".custom-options").addClass("option-hover");
+}, function() {
+  $(this).parents(".custom-options").removeClass("option-hover");
+});
+$(".custom-select-trigger").on("click", function(event) {
+  $('html').one('click',function() {
+    $(".custom-select").removeClass("opened");
+  });
+  $(this).parents(".custom-select").toggleClass("opened");
+  event.stopPropagation();
+});
+$(".custom-option").on("click", function() {
+  $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+  $(this).parents(".custom-options").find(".custom-option").removeClass("selection");
+  $(this).addClass("selection");
+  $(this).parents(".custom-select").removeClass("opened");
+  $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text());
+});
+//END CUSTOM SELECT
+
+$('.checkbox-menu').each(function(){
+    $(this).click(function(){
+        $(this).toggleClass('active');
+    });
+});
+
+var checkedInput = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedInput) {
+			$(this).addClass('checked');
+            $(this).closest('.messages-header-bottom ').next().find('input').addClass('checked');
+			checkedInput = 0;
+		} else {
+			$(this).removeClass('checked');
+             $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+			checkedInput = 1;
+		}
+	});
+});
+
+$(".checkbox-menu-submenu .all").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('input').addClass('checked');
+            $(this).closest('.checkbox-menu').find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('input').removeClass('checked');
+            $(this).closest('.checkbox-menu').find('input').removeClass('checked');
+			checkedMenu = 1;
+		}
+	});
+});
+
+$(".checkbox-menu-submenu .read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+
+$(".checkbox-menu-submenu .not-read").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').addClass('checked');
+
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.messages-header-bottom').next().find('.not-read input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+var checkedMenu = 1;
+$(".checkbox-menu input").each(function() {
+	$(this).click(function(){
+		if (checkedMenu) {
+            $(this).closest('.financial-report-header').next().find('input').addClass('checked');
+			checkedMenu = 0;
+		} else {
+			$(this).removeClass('checked');
+            $(this).closest('.financial-report-header').next().find('input').removeClass('checked');
+
+			checkedMenu = 1;
+		}
+	});
+});
+
+// DATAPICKER
+if ($('#datetimepicker').length > 0) {
+  $('#datetimepicker').datepicker({
+    keyboardNavigation: false,
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    toggleActive: true,
+	language: "ru"
+});
+}
+// END DATAPICKER
 
 // lightBox
   $(function(){
