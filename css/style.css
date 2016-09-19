@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 .tariff-plan.banner {
   position: relative;
   margin-bottom: 20px;
@@ -519,14 +523,14 @@ div {
   line-height: 24px;
 }
 
-.my-profil
+.my-profil.my-project
 .search {
   display: inline-block;
   margin-left: 40px;
   position: relative;
 }
 
-.my-profil
+.my-profil.my-project
 .search + a.button {
   width: 165px;
   height: 40px;
@@ -546,7 +550,7 @@ div {
   margin-top: 34px;
 }
 
-.my-profil
+.my-profil.my-project
 .search
 input[type="search"] {
   width: 360px;
@@ -555,7 +559,7 @@ input[type="search"] {
   padding: 0 15px;
 }
 
-.my-profil
+.my-profil.my-project
 .search
 input[type="submit"] {
   font-size: 0;
@@ -570,7 +574,7 @@ input[type="submit"] {
   top: 0;
 }
 
-.my-profil
+.my-profil.my-project
 .checkbox-menu {
   margin: 0 0 0 15px;
   padding: 0;
@@ -583,19 +587,19 @@ input[type="submit"] {
   margin-right: 10px;
 }
 
-.my-profil
+.my-profil.my-project
 .checkbox-menu.active
 .checkbox-menu-submenu {
   display: block;
 }
 
-.my-profil
+.my-profil.my-project
 .checkbox-menu.active:after {
   margin-top: 3px;
   transform: rotate(-135deg) translateY(-50%);
 }
 
-.my-profil
+.my-profil.my-project
 .checkbox-menu:after {
   position: absolute;
   display: block;
@@ -612,13 +616,13 @@ input[type="submit"] {
   transform-origin: 50% 0;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav {
   border: 1px solid #eaeaea;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav
 li {
@@ -629,7 +633,7 @@ li {
   position: relative;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav
 li:before {
@@ -646,7 +650,7 @@ li:before {
   -webkit-transition: 0.2s ease all;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav
 li.active
@@ -654,7 +658,7 @@ a {
   color: #3498db;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav
 li.active:before {
@@ -663,7 +667,7 @@ li.active:before {
   left: 0;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report
 .nav
 li
@@ -673,30 +677,30 @@ a {
   font-weight: 400;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report .th:nth-of-type(1),
-.my-profil
+.my-profil.my-project
 .financial-report
 .td:nth-of-type(1) {
   width: 45.7% !important;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report .th:nth-of-type(1)
 p
 ,
-.my-profil
+.my-profil.my-project
 .financial-report
 .td:nth-of-type(1)
 p {
   display: inline-block;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report .th:nth-of-type(1)
 .checkbox
 ,
-.my-profil
+.my-profil.my-project
 .financial-report
 .td:nth-of-type(1)
 .checkbox {
@@ -705,48 +709,48 @@ p {
   margin-right: 30px;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report .th:nth-of-type(2),
-.my-profil
+.my-profil.my-project
 .financial-report
 .td:nth-of-type(2) {
   width: 22.8% !important;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report .th:nth-of-type(3),
-.my-profil
+.my-profil.my-project
 .financial-report
 .td:nth-of-type(3) {
   width: 12.9% !important;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report-header {
   height: 60px;
   line-height: 60px;
 }
 
-.my-profil
+.my-profil.my-project
 .financial-report-header
 .button.clear {
   margin-top: 10px;
 }
 
-.my-profil
+.my-profil.my-project
 .input-group.date
 input.form-control {
   height: 35px;
   margin-left: 20px;
 }
 
-.my-profil
+.my-profil.my-project
 .input-group.date
 .input-group-addon {
   line-height: 35px;
 }
 
-.my-profil
+.my-profil.my-project
 .custom-select {
   background: -webkit-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
   background: -moz-linear-gradient(90deg, #ededed 0%, #eeeeee 100%);
@@ -759,7 +763,7 @@ input.form-control {
   vertical-align: middle;
 }
 
-.my-profil
+.my-profil.my-project
 .custom-select
 .custom-select-trigger {
   font-size: 12px;
@@ -767,7 +771,7 @@ input.form-control {
   padding: 0 30px 0 15px;
 }
 
-.my-profil
+.my-profil.my-project
 .custom-select
 .custom-select-trigger:after {
   right: 13px;
@@ -775,31 +779,31 @@ input.form-control {
   height: 5px;
 }
 
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report
 .th:nth-of-type(1) {
   padding-left: 75px;
 }
 
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(1),
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report
 .td:nth-of-type(1) {
   width: 23.7% !important;
 }
 
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(2),
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report
 .td:nth-of-type(2) {
   width: 39.8% !important;
 }
 
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report .td:nth-of-type(4),
-.my-profil.finance-reports
+.my-profil.my-project.finance-reports
 .financial-report
 .th:nth-of-type(4) {
   text-align: right !important;
@@ -955,28 +959,6 @@ select {
   background: #f9f9f9;
 }
 
-.add-order
-#datetimepicker {
-  display: inline-block;
-  width: calc(100% - 53%);
-  position: relative;
-}
-
-.add-order
-#datetimepicker
-input {
-  margin-right: 0;
-  width: 100%;
-}
-
-.add-order
-#datetimepicker
-.input-group-addon {
-  position: absolute;
-  right: 10px;
-  top: 14px;
-}
-
 @media only screen and (max-width: 1200px) {
   .tariff-plan
 .account-items
@@ -984,27 +966,27 @@ input {
     padding: 30px 15px;
     width: calc(100% / 4.06 - 18.5px);
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report {
     text-align: initial  !important;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .th:nth-of-type(1) {
     padding-left: 75px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report .th:nth-of-type(1),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .td:nth-of-type(1) {
     width: 42.7% !important;
     text-align: left !important;
     padding-left: 20px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report .th:nth-of-type(4),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .td:nth-of-type(4) {
     padding-right: 20px !important;
@@ -1032,33 +1014,33 @@ input {
 .messages-block-right {
     width: calc(100% - 330px);
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report .th:nth-of-type(1),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .td:nth-of-type(1) {
     width: 41.7% !important;
     text-align: left !important;
     padding-left: 20px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report .th:nth-of-type(1)
 .checkbox
 ,
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .td:nth-of-type(1)
 .checkbox {
     margin-right: 10px;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td
 p {
     font-size: 14px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .search + a.button {
     float: initial;
     display: table;
@@ -1129,44 +1111,50 @@ h3.title + .button {
 .icon-question {
     display: none !important;
   }
-  .my-profil
+  .my-profil.my-project
 .checkbox-menu
 .checkbox {
-    top: 5px !important;
+    top: 0px !important;
     margin-right: 0px !important;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report {
     text-align: center !important;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
+.financial-report
+.checkbox-menu
+.checkbox {
+    top: 5px !important;
+  }
+  .my-profil.my-project.finance-reports
 .financial-report
 .checkbox {
-    top: 0px;
+    top: 0px !important;
     margin-right: 20px;
     vertical-align: top;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .tr {
     text-align: left;
     padding: 10px 0 0;
     line-height: 30px;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .tr
 .td:nth-of-type(2) {
     padding-left: 15px !important;
     width: calc(100% - 155px) !important;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(1),
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .td:nth-of-type(1),
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(2),
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .td:nth-of-type(2) {
     display: inline-block !important;
@@ -1175,102 +1163,102 @@ h3.title + .button {
     line-height: 24px;
     vertical-align: top;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(1)
 p
 ,
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .td:nth-of-type(1)
 p
 ,
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report .th:nth-of-type(2)
 p
 ,
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .td:nth-of-type(2)
 p {
     display: inline-block;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .th:nth-of-type(1) {
     width: 150px !important;
     padding-left: 30px !important;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .tables {
     display: none !important;
   }
-  .my-profil
+  .my-profil.my-project
 .search {
     margin-bottom: 35px;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .checkbox + p {
     width: calc(100% - 44px);
     vertical-align: top;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .nav
 li {
     width: 100%;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tables
 .tr
 div.td:nth-of-type(2) {
     padding-left: 53px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report-header {
     height: 130px;
     border-bottom: 1px solid #d9d9d9;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report-header
 .button {
     float: initial !important;
     margin: 8px auto 0 !important;
     display: table;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tables {
     display: block !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tables
 .tr:first-child {
     display: none;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr {
     padding: 20px 0;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr .th,
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td {
     width: 100% !important;
     display: block;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr .th
 p
 ,
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td
@@ -1278,31 +1266,31 @@ p {
     text-align: left;
     font-size: 16px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr .th:nth-of-type(2),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr .th:nth-of-type(3),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr .th:nth-of-type(4)
 ,
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td:nth-of-type(2),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td:nth-of-type(3),
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td:nth-of-type(4) {
     padding-left: 53px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report
 .tr
 .td {
@@ -1336,37 +1324,37 @@ h3.banner-title {
     padding: 30px 40px;
     width: 100%;
   }
-  .my-profil.finance-reports
+  .my-profil.my-project.finance-reports
 .financial-report
 .td:nth-of-type(2)
 p {
     font-size: 14px !important;
   }
-  .my-profil
+  .my-profil.my-project
 .input-group.date
 input.form-control {
     width: 110px;
     font-size: 12px;
     height: 39px;
   }
-  .my-profil
+  .my-profil.my-project
 .financial-report-header
 .button.clear {
     width: 130px;
     font-size: 12px;
     display: inline-block;
   }
-  .my-profil
+  .my-profil.my-project
 .input-group.date
 input.form-control {
     margin-left: 0;
   }
-  .my-profil
+  .my-profil.my-project
 .search {
     margin-left: 0;
     width: 100%;
   }
-  .my-profil
+  .my-profil.my-project
 .search
 input[type="search"] {
     width: 90%;
@@ -1428,141 +1416,6 @@ a.button {
 .financial-report-header
 .button.clear {
     float: left;
-  }
-}
-
-.modal {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1050;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
-.modal-dialog {
-  position: relative;
-  width: auto;
-  margin: 10px;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  outline: 0;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #000000;
-}
-
-.modal-backdrop.fade {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.modal-backdrop.in {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.modal-header .close {
-  margin-top: -2px;
-}
-
-.modal-title {
-  margin: 0;
-  line-height: 1.42857143;
-}
-
-.modal-body {
-  position: relative;
-  padding: 20px;
-}
-
-.modal-footer {
-  padding: 20px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
-}
-
-.modal-footer .btn + .btn {
-  margin-left: 5px;
-  margin-bottom: 0;
-}
-
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
-}
-
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
-}
-
-.modal-scrollbar-measure {
-  position: absolute;
-  top: -9999px;
-  width: 50px;
-  height: 50px;
-  overflow: scroll;
-}
-
-@media (min-width: 768px) {
-  .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
-  }
-  .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
-  .modal-sm {
-    width: 300px;
-  }
-}
-
-@media (min-width: 992px) {
-  .modal-lg {
-    width: 900px;
   }
 }
 

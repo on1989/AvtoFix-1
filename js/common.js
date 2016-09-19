@@ -192,6 +192,7 @@
         $(this).siblings(".sub-menu").hide();
         $(item).attr("data-close", "true");
       }
+
     });
   });
 
@@ -208,7 +209,6 @@
          $(".header-block-2").css("display", "none");
          mobMenu.addClass('fa-bars').removeClass('fa-times');
     }
-
   });
 
   $(window).click(function(e) {
@@ -230,7 +230,6 @@
   $(".slider-menu .item-slider a").click(function(event) {
     event.preventDefault();
   });
-
   //HIDE CLICK BODY
   $(document).mouseup(function (e) {
     var folder = $(".sub-menu, .input .categories");
