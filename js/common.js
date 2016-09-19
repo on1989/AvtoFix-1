@@ -192,7 +192,6 @@
         $(this).siblings(".sub-menu").hide();
         $(item).attr("data-close", "true");
       }
-      
     });
   });
 
@@ -209,6 +208,7 @@
          $(".header-block-2").css("display", "none");
          mobMenu.addClass('fa-bars').removeClass('fa-times');
     }
+
   });
 
   $(window).click(function(e) {
@@ -216,7 +216,7 @@
     var openClass = $(e.target).hasClass("fa-times");
     var closeClass = $(e.target).hasClass("fa-bars");
     var mobMenu = $(".burger-menu");
-    
+
     if (target && closeClass) {
       $(".landing-page .mob-menu-landing").css("display", "block");
       mobMenu.removeClass('fa-bars').addClass('fa-times');
@@ -226,10 +226,11 @@
     }
   });
   //END MENU	
-  
+
   $(".slider-menu .item-slider a").click(function(event) {
     event.preventDefault();
   });
+
   //HIDE CLICK BODY
   $(document).mouseup(function (e) {
     var folder = $(".sub-menu, .input .categories");

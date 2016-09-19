@@ -1809,12 +1809,12 @@ section .my-profil .financial-report h3 a.button {
 
 section .my-profil .financial-report .th:nth-of-type(1),
 section .my-profil .financial-report .td:nth-of-type(1) {
-  width: 23.7%;
+  width: 23.7% !important;
 }
 
 section .my-profil .financial-report .th:nth-of-type(2),
 section .my-profil .financial-report .td:nth-of-type(2) {
-  width: 40.4%;
+  width: 40.4% !important;
 }
 
 section .my-profil .financial-report .th:nth-of-type(3),
@@ -2717,21 +2717,18 @@ footer .subscription input[type="email"] {
   color: #747474;
 }
 
-.modal-open {
-  overflow: hidden;
-}
 
 .modal {
   display: none;
 }
 
 .contact-admin .modal-content {
-  margin-top: -210px;
+
   margin-left: -375px;
 }
 
 .login-modal .modal-content {
-  margin-top: -238px;
+  margin-top: 0px;
   margin-left: -227.5px;
   width: 555px;
 }
@@ -2818,7 +2815,7 @@ footer .subscription input[type="email"] {
 }
 
 .register .modal-content {
-  margin-top: -447.5px;
+
   margin-left: -277.5px;
   width: 555px;
 }
@@ -2924,7 +2921,8 @@ footer .subscription input[type="email"] {
 }
 
 .add-order .modal-content {
-  margin-top: -447px;
+  margin-top: 0px;
+    top: 100px;
   margin-left: -375px;
 }
 
@@ -3223,6 +3221,7 @@ footer .subscription input[type="email"] {
   .categories {
     text-align: center;
   }
+/*
   .login-modal .modal-content,
   .register .modal-content {
     margin-top: 0;
@@ -3239,11 +3238,12 @@ footer .subscription input[type="email"] {
     -webkit-overflow-scrolling: touch;
     outline: 0;
   }
+*/
 }
 
 @media only screen and (max-width: 991px) {
   .login-modal .modal-content {
-    margin-top: -238px;
+/*    margin-top: -238px;*/
     margin-left: -255px;
     width: 550px;
   }
@@ -3429,6 +3429,9 @@ footer .subscription input[type="email"] {
   .modal-content form input[type="text"] {
     margin-right: 0;
   }
+
+/*
+
   .login-modal .modal-content,
   .register .modal-content {
     margin-top: 0;
@@ -3445,6 +3448,7 @@ footer .subscription input[type="email"] {
     -webkit-overflow-scrolling: touch;
     outline: 0;
   }
+*/
   .landing-page .mob-header {
     width: 100% !important;
   }
@@ -4322,12 +4326,8 @@ section .messages p.text {
 .login-modal .modal-content {
   max-height: 525px;
   top: 50%;
-  margin-top: -245px;
 }
 
 .register .modal-content {
   max-height: 900px;
 }
-
-
-/*# sourceMappingURL=main.css.map */
