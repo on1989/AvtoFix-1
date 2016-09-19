@@ -5,7 +5,6 @@ div.Tokenize ul.TokensContainer li.TokenSearch input {
     font-size: 12px;
     width: 300px;
 }
-
 div.Tokenize {
     position: relative;
     display: inline-block;
@@ -87,7 +86,9 @@ div.Tokenize ul.TokensContainer li.TokenSearch input {
     border: none;
     outline: none;
     height: 25px;
-    width: auto;
+    width: 300px;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 div.Tokenize ul.TokensContainer li.Placeholder {

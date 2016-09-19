@@ -341,7 +341,8 @@ header .right-block .balance-mobile .sub-menu li a {
 }
 
 header .right-block .balance .sub-menu li a:hover,
-header .right-block .balance-mobile .sub-menu li a:hover, header .right-block .language .sub-menu li a:hover {
+header .right-block .balance-mobile .sub-menu li a:hover,
+header .right-block .language .sub-menu li a:hover {
   color: #3498db;
   font-weight: 600;
 }
@@ -375,20 +376,22 @@ header .right-block .language .sub-menu {
   line-height: initial;
   padding: 10px 0;
 }
+
 header .right-block .language .sub-menu:before {
   right: 25px;
 }
+
 header .right-block .language .sub-menu li {
   line-height: 30px;
   width: 80px;
   text-align: center;
 }
-header .right-block .language .sub-menu li a{
+
+header .right-block .language .sub-menu li a {
   display: block;
   margin: 0;
   width: 100%;
 }
-
 
 header .right-block .sub-menu {
   position: absolute;
@@ -469,7 +472,6 @@ header .right-block .sub-menu:before {
   right: 120px;
   z-index: 1;
 }
-
 
 header .user img {
   width: 40px;
@@ -628,7 +630,7 @@ section .slider .item {
   padding: 15px 0 0;
 }
 
-section .slider .item .photo{
+section .slider .item .photo {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -636,7 +638,8 @@ section .slider .item .photo{
   display: table;
 }
 
-section .slider .item .name, .why_us .name {
+section .slider .item .name,
+.why_us .name {
   font-size: 16px;
   color: #000;
   font-weight: 600;
@@ -652,7 +655,8 @@ section .slider .item .by-rating {
   margin: 13px 0 17px;
 }
 
-section .slider .item .text, .why_us .text {
+section .slider .item .text,
+.why_us .text {
   font-size: 12px;
   font-weight: 300;
   color: #000;
@@ -773,11 +777,13 @@ section .order-head {
   padding: 20px 45px;
   margin-top: 10px;
 }
+
 section .messages a {
   overflow: hidden;
   color: #000;
   display: block;
 }
+
 section .messages h4,
 section .order-head h4 {
   font-size: 20px;
@@ -1132,9 +1138,11 @@ section .order .user-location h4 {
   text-align: right;
   margin-top: 0;
 }
+
 section .order .user-location .photo {
   text-align: right;
 }
+
 section .order .user-location img {
   width: calc(100% / 3.05 - 7px);
   margin-left: 10px;
@@ -1931,7 +1939,8 @@ section .comments .comment-text {
   padding-top: 15px;
   text-align: justify;
 }
-section .comments .comment{
+
+section .comments .comment {
   overflow: hidden;
 }
 
@@ -1944,6 +1953,7 @@ section .comments .comment{
 .my-profil .order-tracker .comment {
   overflow: hidden;
 }
+
 .my-profil .order-tracker .comment:last-child {
   border-bottom: 1px solid #d9d9d9;
 }
@@ -2358,7 +2368,8 @@ section .refill h5.title {
   margin-bottom: 37px;
 }
 
-section .refill .button, .freelancer-search .button {
+section .refill .button,
+.freelancer-search .button {
   background: -webkit-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
   background: -moz-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
   background: -o-linear-gradient(90deg, #3a7cd5 0%, #3498db 100%);
@@ -3082,9 +3093,11 @@ footer .subscription input[type="email"] {
 .burger-menu {
   display: none;
 }
+
 .sm-show {
   display: none;
 }
+
 @media only screen and (max-width: 1199px) {
   header .right-block ul li:nth-child(2) a {
     margin-left: 10px;
@@ -3095,8 +3108,8 @@ footer .subscription input[type="email"] {
   header .right-block .sub-menu {
     text-align: left !important;
   }
-
-  header .right-block .sub-menu ul li, header .right-block .sub-menu a.all-messages{
+  header .right-block .sub-menu ul li,
+  header .right-block .sub-menu a.all-messages {
     width: 100% !important;
   }
   header .right-block .messages .sub-menu ul li a {
@@ -3132,7 +3145,6 @@ footer .subscription input[type="email"] {
   section .categories li:nth-of-type(4n) b {
     padding-right: 0;
   }
-
   section .messages ul.md-show {
     display: block !important;
     margin-top: 15px;
@@ -3162,14 +3174,15 @@ footer .subscription input[type="email"] {
   footer .payment li {
     margin-right: 15px;
   }
-  .order-tracker .nav-tabs li{
+  .order-tracker .nav-tabs li {
     width: auto !important;
     margin: 0 15px;
   }
   .tab-pane .tr {
     width: 100% !important;
   }
-  .tab-pane .table-row-name .th, .tab-content .td{
+  .tab-pane .table-row-name .th,
+  .tab-content .td {
     padding-left: 0 !important;
     width: 24.3% !important;
     text-align: center;
@@ -3180,16 +3193,19 @@ footer .subscription input[type="email"] {
     text-align: left;
     padding-left: 10px !important;
   }
-  .tables .tr .th, .tables .tr .td {
+  .tables .tr .th,
+  .tables .tr .td {
     width: 20% !important;
     box-sizing: border-box;
     text-align: center !important;
     padding: 0 !important;
   }
-  .tables .tr .th:nth-child(2), .tables .tr .td:nth-child(2) {
+  .tables .tr .th:nth-child(2),
+  .tables .tr .td:nth-child(2) {
     width: 38% !important;
   }
-  section .order .user-description, section .order .user-location {
+  section .order .user-description,
+  section .order .user-location {
     width: 50%;
     box-sizing: border-box;
     display: block;
@@ -3198,16 +3214,17 @@ footer .subscription input[type="email"] {
   section .order .user-location {
     padding-right: 20px;
   }
-  section .order  img.users {
+  section .order img.users {
     margin: 29px 50px 0;
   }
-  section .order  .description {
+  section .order .description {
     margin-left: 30px;
   }
   .categories {
     text-align: center;
   }
-  .login-modal .modal-content, .register .modal-content {
+  .login-modal .modal-content,
+  .register .modal-content {
     margin-top: 0;
     margin-left: -275px !important;
     width: 550px;
@@ -3221,7 +3238,6 @@ footer .subscription input[type="email"] {
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
     outline: 0;
-    
   }
 }
 
@@ -3326,7 +3342,8 @@ footer .subscription input[type="email"] {
     width: 100% !important;
     border-right: none !important;
   }
-  .map-master, .questions {
+  .map-master,
+  .questions {
     display: none !important;
   }
   .sm-show {
@@ -3338,14 +3355,15 @@ footer .subscription input[type="email"] {
   section .comments .comment {
     padding: 20px 30px;
   }
-  section .comments .comment img{
+  section .comments .comment img {
     margin-left: 0;
   }
   section .comments .comment-text {
     width: 100%;
     float: none;
   }
-  section .order .order-head p.status, section .order .order-head ul {
+  section .order .order-head p.status,
+  section .order .order-head ul {
     display: block;
     text-align: center;
     width: 100%;
@@ -3355,11 +3373,12 @@ footer .subscription input[type="email"] {
     padding: 15px;
     line-height: 1;
   }
-   section .order .order-head ul li:not(.button){
+  section .order .order-head ul li:not(.button) {
     padding-bottom: 15px;
   }
-  
-  section .order .order-head ul li:last-of-type, .order .user-description img.users, .order .user-description .description {
+  section .order .order-head ul li:last-of-type,
+  .order .user-description img.users,
+  .order .user-description .description {
     float: none !important;
     display: block;
     margin: 20px auto !important;
@@ -3367,11 +3386,15 @@ footer .subscription input[type="email"] {
   section .order .order-head ul li:last-of-type {
     margin-top: 20px !important;
   }
-  section .order .user-description, section .order .user-location, section .order h2.title.price {
+  section .order .user-description,
+  section .order .user-location,
+  section .order h2.title.price {
     width: 100%;
     text-align: center;
   }
-  section .order .user-location, section .order .user-description h4, section .order .user-description ul.skills {
+  section .order .user-location,
+  section .order .user-description h4,
+  section .order .user-description ul.skills {
     padding-right: 0 !important;
     padding-left: 0 !important;
     margin-left: 0;
@@ -3385,11 +3408,13 @@ footer .subscription input[type="email"] {
   section .order .user-location h4:first-child {
     margin-bottom: 20px;
   }
-  .ready-to-perform .th, .ready-to-perform .td{
+  .ready-to-perform .th,
+  .ready-to-perform .td {
     width: 25% !important;
     line-height: 1;
   }
-  .ready-to-perform .th:first-child, .ready-to-perform .td:first-child{
+  .ready-to-perform .th:first-child,
+  .ready-to-perform .td:first-child {
     width: 48% !important;
   }
   .financial-report .tables .tr div.td:nth-of-type(2) {
@@ -3404,7 +3429,8 @@ footer .subscription input[type="email"] {
   .modal-content form input[type="text"] {
     margin-right: 0;
   }
-  .login-modal .modal-content, .register .modal-content {
+  .login-modal .modal-content,
+  .register .modal-content {
     margin-top: 0;
     margin-left: -275px !important;
     width: 550px;
@@ -3418,14 +3444,13 @@ footer .subscription input[type="email"] {
     z-index: 1050;
     -webkit-overflow-scrolling: touch;
     outline: 0;
-    
   }
   .landing-page .mob-header {
     width: 100% !important;
   }
   .landing-page .right-block {
     width: auto;
-    float:  right;
+    float: right;
   }
   .landing-page .right-block .login li:first-child a {
     margin-left: 0;
@@ -3524,7 +3549,8 @@ footer .subscription input[type="email"] {
     z-index: 100;
     height: auto;
   }
-  header .menu li, header.landing-page .mob-menu-landing li {
+  header .menu li,
+  header.landing-page .mob-menu-landing li {
     display: block;
     line-height: 80px;
     position: relative;
@@ -3533,8 +3559,10 @@ footer .subscription input[type="email"] {
   }
   header.landing-page .mob-menu-landing a {
     color: #fff;
+    display: block;
   }
-  header .menu li:hover a, header.landing-page .mob-menu-landing li:hover a {
+  header .menu li:hover a,
+  header.landing-page .mob-menu-landing li:hover a {
     font-size: 20px;
   }
   header .header-block-1 .xs-hide {
@@ -3606,13 +3634,16 @@ footer .subscription input[type="email"] {
   section .messages:last-child {
     margin-bottom: 20px;
   }
-    .freelancer-search .search-orders + label {
+  .freelancer-search .search-orders + label {
     margin: 10px 0 25px;
   }
   .freelancer-search .search-orders h2.title {
     text-align: center;
   }
-  .freelancer-search .select, .freelancer-search .select > select, .freelancer-search .input, .freelancer-search .input > input {
+  .freelancer-search .select,
+  .freelancer-search .select > select,
+  .freelancer-search .input,
+  .freelancer-search .input > input {
     width: 100% !important;
   }
   .freelancer-search .location-input {
@@ -3625,25 +3656,30 @@ footer .subscription input[type="email"] {
   .freelancer-search .range * {
     line-height: 40px;
   }
-  .freelancer-search .range-input, .freelancer-search .range label[for="minCost"] {
+  .freelancer-search .range-input,
+  .freelancer-search .range label[for="minCost"] {
     padding: 0;
   }
   .freelancer-search .range-input #minCost {
     margin-left: 0;
   }
-  .freelancer-search .range-input #minCost, .freelancer-search .range-input #maxCost {
+  .freelancer-search .range-input #minCost,
+  .freelancer-search .range-input #maxCost {
     height: 40px;
   }
   .freelancer-search .slidCont {
     display: none;
   }
-  .masters-message .select-search, .masters-message .pogination, .see-resalts .pogination, .financial-report .tables {
+  .masters-message .select-search,
+  .masters-message .pogination,
+  .see-resalts .pogination,
+  .financial-report .tables {
     display: none !important;
   }
-   .masters-message {
+  .masters-message {
     padding: 40px 20px;
   }
-   .masters-message .messages {
+  .masters-message .messages {
     padding: 25px !important;
   }
   .container-search-masters .masters-message .messages .user + ul {
@@ -3656,7 +3692,7 @@ footer .subscription input[type="email"] {
     display: block !important;
     text-align: center;
   }
-  .my-profil .buttons li{
+  .my-profil .buttons li {
     display: block;
     margin-bottom: 30px;
   }
@@ -3666,13 +3702,15 @@ footer .subscription input[type="email"] {
   .ready-to-perform .th:not(:nth-of-type(1)) {
     display: none !important;
   }
-  .ready-to-perform .th, .ready-to-perform .td{
+  .ready-to-perform .th,
+  .ready-to-perform .td {
     width: 100% !important;
     display: block !important;
     text-align: left !important;
     padding: 0 !important;
   }
-  .ready-to-perform .th:first-child, .ready-to-perform .td:first-child{
+  .ready-to-perform .th:first-child,
+  .ready-to-perform .td:first-child {
     width: 100% !important;
   }
   .ready-to-perform .tr {
@@ -3684,7 +3722,7 @@ footer .subscription input[type="email"] {
     top: 20%;
     left: 25px;
   }
-  .ready-to-perform .tr:not(:first-child){
+  .ready-to-perform .tr:not(:first-child) {
     padding-left: 100px !important;
   }
   .ready-to-perform p.user {
@@ -3696,8 +3734,8 @@ footer .subscription input[type="email"] {
 }
 
 @media only screen and (max-width: 580px) {
-  
-  .login-modal .modal-content, .register .modal-content {
+  .login-modal .modal-content,
+  .register .modal-content {
     margin-top: 0;
     width: 90%;
     left: 5%;
@@ -3718,12 +3756,13 @@ footer .subscription input[type="email"] {
     margin-top: 5px;
   }
 }
+
 @media only screen and (max-width: 530px) {
-  
   .landing-page .burger-menu:before {
     margin-right: 0 !important;
   }
-  section .messages h4, section .messages h4 span {
+  section .messages h4,
+  section .messages h4 span {
     font-size: 18px !important;
   }
   header .right-block .sub-menu {
@@ -3758,7 +3797,7 @@ footer .subscription input[type="email"] {
     display: block;
     text-align: center;
   }
-  .landing-page .right-block li{
+  .landing-page .right-block li {
     margin: 0 10px;
   }
   .landing-page {
@@ -3780,7 +3819,9 @@ footer .subscription input[type="email"] {
     margin: 0 auto;
     top: 20px;
   }
-  header .balance-mobile, header .notify, header .messages {
+  header .balance-mobile,
+  header .notify,
+  header .messages {
     margin-right: 15px;
   }
   header .right-block .sub-menu {
@@ -3814,7 +3855,8 @@ footer .subscription input[type="email"] {
     padding: 15px !important;
     position: relative;
   }
-  .see-resalts .messages .price, .see-resalts .messages .status {
+  .see-resalts .messages .price,
+  .see-resalts .messages .status {
     position: absolute;
     top: 0;
     float: none;
@@ -3830,11 +3872,10 @@ footer .subscription input[type="email"] {
   .see-resalts .messages .message-title {
     margin-top: 40px;
   }
-  .see-resalts .messages .message-title h4{
+  .see-resalts .messages .message-title h4 {
     width: 100%;
   }
-  
-  .my-profil .buttons li{
+  .my-profil .buttons li {
     margin-left: auto !important;
   }
   .financial-report h3 {
@@ -3856,7 +3897,8 @@ footer .subscription input[type="email"] {
     text-align: center;
     padding-bottom: 20px;
   }
-  .freelancer-search .range > label, .freelancer-search .range-input {
+  .freelancer-search .range > label,
+  .freelancer-search .range-input {
     display: block;
     float: none;
   }
@@ -3872,7 +3914,7 @@ footer .subscription input[type="email"] {
     float: none;
     text-align: left;
   }
- .priority-selection label{
+  .priority-selection label {
     display: block;
     width: 100%;
     padding-left: 25%;
@@ -3886,7 +3928,7 @@ footer .subscription input[type="email"] {
   .modal-content .modal-header .modal-title {
     font-size: 20px;
   }
-  .landing-page .right-block li{
+  .landing-page .right-block li {
     margin: 0px;
   }
   section.landing .container-fluid h1.title {
@@ -3902,14 +3944,17 @@ footer .subscription input[type="email"] {
     text-align: center;
     margin-bottom: 10px;
   }
-  header .right-block .balance-mobile, header .right-block .messages, header .right-block .notify, header .right-block .user {
+  header .right-block .balance-mobile,
+  header .right-block .messages,
+  header .right-block .notify,
+  header .right-block .user {
     margin: auto 20px;
   }
-   header .right-block .sub-menu {
+  header .right-block .sub-menu {
     box-sizing: border-box;
     width: 300px;
   }
-   header .right-block .balance-mobile .sub-menu {
+  header .right-block .balance-mobile .sub-menu {
     left: -20px !important;
   }
   header .right-block .balance-mobile .sub-menu:before {
@@ -3921,17 +3966,17 @@ footer .subscription input[type="email"] {
   header .right-block .messages .sub-menu:before {
     right: 180px !important;
   }
-  .user .skills li{
+  .user .skills li {
     display: block !important;
     margin: 10px auto !important;
   }
   .user .balance {
     font-size: 18px !important;
   }
- .comments a.button {
-   float: none !important;
-   display: block !important;
-   margin: 10px auto !important;
+  .comments a.button {
+    float: none !important;
+    display: block !important;
+    margin: 10px auto !important;
   }
   .comments h3 {
     text-align: center;
@@ -3941,14 +3986,16 @@ footer .subscription input[type="email"] {
     margin: auto !important;
     padding-top: 10px;
   }
-  .comments .user-description, .comments .comment img {
+  .comments .user-description,
+  .comments .comment img {
     display: block !important;
   }
-  
   .order .order-head ul {
     margin-bottom: 15px;
   }
-  .order .user-description h2 span, .order .user-description .description h5 span, .order .user-description .stars ~ p {
+  .order .user-description h2 span,
+  .order .user-description .description h5 span,
+  .order .user-description .stars ~ p {
     display: block;
     margin-top: 10px
   }
@@ -3961,9 +4008,7 @@ footer .subscription input[type="email"] {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  
-}
+@media only screen and (max-width: 320px) {}
 
 #dropzone {
   padding: 0 95px;
@@ -4039,9 +4084,6 @@ span.plus {
   }
 }
 
-
-/*     Alina    */
-
 .container-search-masters .input button {
   line-height: 50px;
   right: 20px;
@@ -4065,6 +4107,7 @@ span.plus {
   overflow: hidden;
   margin: 10px 0;
 }
+
 .range * {
   line-height: 30px;
 }
@@ -4209,6 +4252,7 @@ span.plus {
 .priority-selection label input {
   margin-right: 15px;
 }
+
 .autocomplete-suggestions {
   box-sizing: border-box;
   background-color: #fff;
@@ -4216,60 +4260,74 @@ span.plus {
   border-top: none;
   overflow-y: scroll;
 }
+
 .autocomplete-suggestions .autocomplete-suggestion {
   padding: 10px;
   cursor: pointer;
 }
+
 .autocomplete-suggestions .autocomplete-suggestion:hover {
   background-color: #e3e3e3;
 }
+
 .why_us {
   background-color: #fcfcfc;
 }
+
 .why_us .item {
   text-align: center;
   margin-bottom: 30px;
 }
+
 .why_us .item .photo {
   width: 100px;
   height: auto;
   border-radius: 50%;
 }
+
 .why_us .text {
   text-align: justify;
 }
+
 header.landing-page .mob-menu-landing {
-    display: none;
-  }
+  display: none;
+}
+
 section .messages ul.md-show {
-    display: none;
-  }
+  display: none;
+}
+
 section .messages .message-title {
   overflow: hidden;
 }
+
 section .messages .message-title h4 {
   float: left;
   width: calc( 100% - 150px)
 }
+
 section .messages .message-title .price {
   min-width: 150px;
   text-align: right;
 }
+
 section .messages p.text {
   width: 100%;
 }
+
 .freelancer-search .range label[for="minCost"] {
   padding: 0;
 }
+
 .login-modal .modal-content {
-    max-height: 525px;
-    top: 50%;
-    margin-top: -245px;
-  }
+  max-height: 525px;
+  top: 50%;
+  margin-top: -245px;
+}
+
 .register .modal-content {
   max-height: 900px;
 }
-/*  end Alina  */
 
 
 /*# sourceMappingURL=main.css.map */

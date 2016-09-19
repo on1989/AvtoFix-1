@@ -104,7 +104,7 @@
                 .addClass('TokenSearch')
                 .appendTo(this.tokensContainer);
 
-            this.searchInput = $('<input />')
+            this.searchInput = $('<input placeholder="Начните вводить навыки" />')
                 .appendTo(this.searchToken);
 
             if(this.options.searchMaxLength > 0){
