@@ -226,7 +226,10 @@
     }
   });
   //END MENU	
-
+  
+  $(".slider-menu .item-slider a").click(function(event) {
+    event.preventDefault();
+  });
   //HIDE CLICK BODY
   $(document).mouseup(function (e) {
     var folder = $(".sub-menu, .input .categories");
