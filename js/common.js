@@ -179,12 +179,12 @@
   ;
 
   $(".icon-messages > li > a, .balance > li > a, .balance-mobile > li > a, .language > li > a").each(function (i, item) {
-    $(this).attr("data-close", "true").click(function () {
-      
+    $(this).attr("data-close", "true").click(function (e) {
+      e.preventDefault();
       if ( $(this).attr("data-close") === 'true' ) {
         $(this).siblings(".sub-menu").show();
         $(item).attr("data-close", "false");
-        $('i').click(function () {
+        $('i.fa-times').click(function () {
           $(".sub-menu").hide();
           $(item).attr("data-close", "true");
         });
